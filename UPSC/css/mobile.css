@@ -1,0 +1,466 @@
+/* Home Section  */
+
+.main {
+    flex-direction: column-reverse;
+}
+
+.right {
+    max-width: 90%;
+}
+
+.left {
+    text-align: left;
+    margin: 0px 50px;
+    max-width: 85%;
+}
+
+.left h1 {
+    font-size: 70px;
+    margin-top: 20px;
+}
+
+.left p {
+    font-size: 28px;
+}
+
+/* About Section  */
+
+.about h1 {
+    font-size: 55px;
+    font-weight: 800;
+}
+
+.about .underline {
+    margin: 0 24%;
+    margin-top: -2px;
+    margin-bottom: 25px;
+}
+
+.about .cols {
+    flex-direction: column;
+    margin-top: 3%;
+    justify-content: center;
+}
+
+.leftcol img {
+    width: 340px;
+}
+
+.rightcol p {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Upstart Edge  */
+
+.Edge {
+    height: 0px;
+}
+
+.Edge h2 {
+    font-size: 36px;
+    margin: 4px;
+}
+
+.cols .leftpart {
+    width: 30%;
+}
+
+.cols .leftpart img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.Edge .cols .mid {
+    width: 70%;
+    margin-left: 20px;
+}
+
+.mid h1 {
+    font-size: 28px;
+    margin: 0
+}
+
+.mid p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.bg {
+    min-height: 60vh;
+}
+
+.group {
+    margin-top: 45px;
+}
+
+.hide {
+    display: none;
+}
+
+.hide-lg {
+    display: flex !important;
+}
+
+.block {
+    border-radius: 24px;
+    width: 110px;
+    height: 120px;
+}
+
+.block h1 {
+    padding: 10px 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.block h3 {
+    font-size: 17px;
+}
+
+.right1 {
+    visibility: hidden;
+    display: none;
+}
+
+/* Delegates Section  */
+
+.row {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+}
+
+.row .col {
+    width: 80%;
+}
+
+.heading1 {
+    font-size: 40px;
+}
+
+.photo img {
+    width: 50%;
+}
+
+/* Timeline Section  */
+
+#timeline .container .flex-center {
+    flex-direction: column;
+}
+
+#timeline .container .vertical {
+    /* display: block;
+  width: 30%; */
+    display: block;
+    /* width: 30%; */
+    width: 100vw;
+    transform: scale(1.9, 1.8);
+}
+
+#timeline .container .horizontal {
+    display: none;
+}
+
+#timeline .container {
+    flex-direction: row;
+}
+
+.date h1 {
+    font-size: 13px;
+}
+
+.down {
+    margin-bottom: 0%;
+}
+
+.up {
+    margin-top: 0%;
+}
+
+.date {
+    margin: 30px 11px;
+}
+
+/* Upstart National  */
+
+.heading {
+    font-size: 32px;
+    padding-top: 40px;
+}
+
+#Nationals .flex-center .container h1 {
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+#Nationals .flex-center .container .flex-center {
+    flex-direction: column;
+}
+
+.rightborder {
+    margin: 0px 10px;
+}
+
+.circle {
+    display: none;
+}
+
+/* .cir1 {
+  right: 12.2% !important;
+} */
+
+.rightline {
+    display: none
+}
+
+.content {
+    width: 80%;
+    margin-right: 0%;
+}
+
+.content p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.ver {
+    width: 100%;
+    margin-right: 0%;
+    transform: rotate(270deg);
+}
+
+#Nationals .flex-center .container .delhi .ver h1 {
+    margin: 10px 29px;
+    font-size: 32px;
+    letter-spacing: 4px;
+}
+
+/* Incentives  */
+
+.mainrow {
+    display: flex;
+    flex-direction: column;
+}
+
+.colo1 {
+    width: 88%;
+}
+
+.box {
+    width: 60%;
+}
+
+.eligcols {
+    flex-direction: column;
+}
+
+.eligleft {
+    width: 80%;
+    margin: auto;
+}
+
+.eligp {
+    font-size: 18px;
+    padding: 0 18px;
+}
+
+/* Competition Structure  */
+
+.wrapper .center-line {
+    left: 7.5%;
+    height: 100%;
+}
+
+.icon {
+    flex-direction: column;
+    width: 100%;
+}
+
+.wrapper .row {
+    margin: 30px 0 3px 60px;
+    flex-direction: row;
+}
+
+.wrapper .row1 {
+    flex-direction: row-reverse;
+}
+
+.wrapper .row2 .icon h1 {
+    font-size: 15px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.wrapper .row2 .icon img {
+    margin: auto;
+    width: 23%;
+    object-fit: contain;
+}
+
+.wrapper .row1 .icon img {
+    margin: auto;
+    width: 24%;
+    object-fit: contain;
+}
+
+.wrapper .row1 .icon h1 {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+.wrapper .row .cir2 {
+    right: 44px;
+}
+
+.wrapper .row .cir1 {
+    right: 44px;
+}
+
+.wrapper .row .timeline-content {
+    width: 90%;
+    padding: 30px;
+    margin-right: 5%;
+}
+
+.row1 .timeline-content::before {
+    left: -36px;
+}
+
+.row2 .timeline-content::before {
+    left: -36px;
+}
+
+.timeline-content p {
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.box {
+    border-radius: 25px;
+    width: 70%;
+    padding: 0px 30px;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Terms And Conditions  */
+
+.Terms {
+    flex-direction: column;
+}
+
+#termsandconditions h1 {
+    font-size: 28px;
+}
+
+.dot1 {
+    display: none;
+}
+
+.dot2 {
+    display: none;
+}
+
+.upline {
+    display: none;
+}
+
+.lowline {
+    display: none;
+}
+
+.Terms .image img {
+    border: none;
+    border-radius: 0;
+    width: 85%;
+}
+
+.point h3 {
+    font-size: 15px;
+}
+
+.Conditions .point {
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.one {
+    right: 2%;
+    margin-left: 15px;
+}
+
+.two {
+    right: 2%;
+    margin-left: 15px;
+}
+
+.three {
+    right: 2%;
+    margin-left: 15px;
+}
+
+.four {
+    right: 2%;
+    margin-left: 15px;
+}
+
+.five {
+    right: 2%;
+    margin-left: 15px;
+}
+
+.six {
+    right: 2%;
+    margin-left: 15px;
+}
+
+.seven {
+    right: 2%;
+    margin-left: 15px;
+}
+
+.eight {
+    right: 2%;
+    margin-left: 15px;
+}
+
+.nine {
+    right: 2%;
+    margin-left: 15px;
+}
+
+.ten {
+    right: 2%;
+    margin-left: 15px;
+}
+
+/* Footer */
+
+.dividefooter {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.part1 a {
+    text-align: center;
+}
+
+.part2 h1 {
+    font-size: 23px;
+}
+
+.part2 .team .name h3 {
+    font-size: 17px;
+}
+
+.part2 .team .name p {
+    font-size: 14px;
+}
+
+.part2 .team .name {
+    margin: 15px 15px;
+}

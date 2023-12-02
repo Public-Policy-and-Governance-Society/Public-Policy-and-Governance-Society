@@ -1,0 +1,240 @@
+@-webkit-keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+}
+
+@keyframes slide-top-1 {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 0;
+    }
+    20% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+    /* 30% {
+        -webkit-transform: translateY(-100px);
+                transform: translateY(-100px);
+                opacity: 1;
+      } */
+    30% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+    45% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+}
+
+@keyframes slide-top-2 {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 0;
+    }
+    20% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+    27% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+    37% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+}
+
+@keyframes slide-top-3 {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 0;
+    }
+    20% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+    25% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+    30% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    70% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+}
+
+.slide-top-1 {
+    -webkit-animation: slide-top-1 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation: slide-top-1 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation-delay: 1s;
+    position: absolute;
+    top: 360px;
+    left: 20px;
+    /* transform: translateY(-100px); */
+    /* height: 100%; */
+}
+
+.slide-top-2 {
+    -webkit-animation: slide-top 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation: slide-top-2 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation-delay: 1.2s;
+    position: absolute;
+    top: 420px;
+    left: 20px;
+    /* transform: translateY(-100px); */
+    /* height: 100%; */
+}
+
+.slide-top-3 {
+    -webkit-animation: slide-top 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation: slide-top-3 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation-delay: 1.4s;
+    position: absolute;
+    top: 480px;
+    left: 20px;
+    /* transform: translateY(-100px); */
+    /* height: 100%; */
+}
+
+.slide-top-4 {
+    -webkit-animation: slide-top-1 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation: slide-top-1 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation-delay: 6s;
+    position: absolute;
+    top: 360px;
+    left: 40%;
+    /* transform: translateY(-100px); */
+    /* height: 100%; */
+}
+
+.slide-top-5 {
+    -webkit-animation: slide-top 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation: slide-top-2 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation-delay: 6.2s;
+    position: absolute;
+    top: 420px;
+    left: 40%;
+    /* transform: translateY(-100px); */
+    /* height: 100%; */
+}
+
+.slide-top-6 {
+    -webkit-animation: slide-top 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation: slide-top-3 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation-delay: 6.4s;
+    position: absolute;
+    top: 480px;
+    left: 40%;
+    /* transform: translateY(-100px); */
+    /* height: 100%; */
+}
+
+.slide-top-7 {
+    -webkit-animation: slide-top-1 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation: slide-top-1 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation-delay: 11s;
+    position: absolute;
+    top: 360px;
+    right: 20px;
+    /* right: 10%; */
+    /* left: 60%; */
+    /* transform: translateY(-100px); */
+    /* height: 100%; */
+}
+
+.slide-top-8 {
+    -webkit-animation: slide-top 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation: slide-top-2 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation-delay: 11.2s;
+    position: absolute;
+    top: 420px;
+    /* right: 10%; */
+    /* left: 60%; */
+    right: 20px;
+    /* transform: translateY(-100px); */
+    /* height: 100%; */
+}
+
+.slide-top-9 {
+    -webkit-animation: slide-top 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation: slide-top-3 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation-delay: 11.4s;
+    position: absolute;
+    top: 480px;
+    /* right: 10%; */
+    /* left: 60%; */
+    right: 20px;
+    /* transform: translateY(-100px); */
+    /* height: 100%; */
+}
+
+@media screen and (max-width:900px) {
+    .slide-top-1,
+    .slide-top-2,
+    .slide-top-3,
+    .slide-top-4,
+    .slide-top-5,
+    .slide-top-6,
+    .slide-top-7,
+    .slide-top-8,
+    .slide-top-9 {
+        left: 10%;
+    }
+    .slide-top-1,
+    .slide-top-2,
+    .slide-top-3 {
+        left: 0px;
+    }
+}
