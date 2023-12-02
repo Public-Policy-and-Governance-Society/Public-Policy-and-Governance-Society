@@ -234,6 +234,7 @@ body {
 
 .right img {
     width: 95%;
+    filter: contrast(1000%);
     /* padding-left: 100px; */
     /* padding-top: 30px; */
 }
