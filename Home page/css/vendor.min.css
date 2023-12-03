@@ -3058,7 +3058,7 @@
 }
 
 @font-face {
-    font-family: lg;
+    font-family: 'lg';
     src: url(../fonts/lightgallery/lg.eot?n1z373);
     src: url(../fonts/lightgallery/lg.eot?#iefixn1z373) format("embedded-opentype"), url(../fonts/lightgallery/lg.woff?n1z373) format("woff"), url(../fonts/lightgallery/lg.ttf?n1z373) format("truetype"), url(../fonts/lightgallery/lg.svg?n1z373#lg) format("svg");
     font-weight: 400;
@@ -3108,7 +3108,8 @@
 }
 
 .lg-actions .lg-next:before {
-    content: "\e095"
+    content: "\e095";
+    
 }
 
 .lg-actions .lg-prev {
