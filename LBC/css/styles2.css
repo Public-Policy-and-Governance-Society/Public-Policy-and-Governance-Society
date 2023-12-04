@@ -1,0 +1,36 @@
+.landing {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav {
+    background-color: #3565D9;
+    border-radius: 10px;
+}
+
+.flex-container {
+    padding: 0 10vw;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20vh;
+}
+
+@media (min-width: 100px) and (max-width: 778px) {
+    .flex-container {
+        flex-direction: column;
+        padding-bottom: 10vh;
+        align-items: center;
+    }
+    .hidden-small {
+        display: none;
+    }
+}
+
+@media (min-width: 778px) {
+    .hidden-large {
+        display: none;
+    }
+}
