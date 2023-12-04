@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@font-face {
+    font-family: "pirulen";
+    src: url("pirulen rg.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Nunito, sans-serif;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#111c, #111c) center fixed no-repeat, url("aero2.png") center fixed no-repeat, black !important;
+    background-size: 100%, 50%;
+}
+
+#logo-n-title,
+#navbar {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.25s color;
+}
+
+#main img {
+    width: 15vw;
+    display: block;
+    position: relative;
+}
+
+#main {
+    min-height: 210vh;
+    padding: 0 11.45vw;
+}
+
+.img {
+    display: inline-block;
+    position: absolute;
+    opacity: 0;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    transition: transform 0.5s;
+    transform: scale(1.2);
+}
+
+.img:hover {
+    transform: scale(1.5);
+    z-index: 500;
+}
+
+.img:hover>.dsc {
+    display: block !important;
+}
+
+.dsc {
+    display: none !important;
+}
+
+.name,
+.dsc {
+    position: absolute;
+    display: block;
+    width: 100%;
+    z-index: 2;
+    background: rgba(0, 128, 128, 0.83);
+    text-align: center;
+    transition: all 0.25s;
+    color: white;
+    height: 300px;
+}
+
+.name {
+    font-size: 1em;
+    margin-top: -300px;
+    line-height: calc(600px - 2.5em);
+}
+
+.dsc {
+    margin-top: 100%;
+    font-size: x-small;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: #141414 !important;
+}
+
+#head {
+    background-color: #141514 !important;
+}
+
+.navbar .navbar-brand {
+    color: white;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.navbar .navbar-brand:hover {
+    color: #01ACBE;
+}
+
+.navbar .navbar-nav li a {
+    color: white !important;
+    margin-left: 2vw;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.navbar .navbar-nav li a:hover {
+    color: #01ACBE !important;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item {
+    color: black !important;
+}
+
+#contact {
+    padding-top: 5vh;
+    padding-left: 6vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+#wh {
+    text-decoration: none;
+    color: white;
+}
+
+#social {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    padding-top: 6vh;
+    padding-left: 3vw;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    height: 150px;
+    /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fa {
+    padding: 0.18vw;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    color: white;
+}
+
+.fa-youtube {
+    color: white;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.fa-google {
+    color: white;
+}
+
+#info {
+    padding-top: 2vh;
+    padding-left: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#adress {
+    padding-top: 1vh;
+    padding-left: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+#mail {
+    padding-top: 1vw;
+    padding-left: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 600px) {
+    #mail {
+        padding-top: 0vw;
+        padding-left: 0vw;
+        font-size: 10px;
+    }
+    #adress {
+        padding-top: 0vh;
+        padding-left: 0vw;
+        font-size: 10px;
+    }
+    #info {
+        padding-top: 4vh;
+        padding-left: 1vw;
+        font-size: 10px;
+    }
+    #social {
+        padding-top: 8vw;
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+    .column {
+        width: 50%;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .column {
+        width: 100%;
+        height: 100px;
+        left: 10px;
+    }
+    #mail {
+        padding-top: 0vw;
+        padding-left: 10vw;
+        font-size: 10px;
+    }
+    #adress {
+        padding-top: 0vh;
+        padding-left: 10vw;
+        font-size: 10px;
+    }
+    #info {
+        padding-top: 4vh;
+        padding-left: 10vw;
+        font-size: 10px;
+    }
+    #social {
+        padding-top: 8vw;
+        padding-left: 10vw;
+        font-size: small;
+    }
+}
+
+#heading {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    color: teal;
+}
+
+@media only screen and (max-width: 400px) {
+    #heading {
+        text-align: center;
+        position: absolute;
+        top: 20%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        font-size: 2em;
+        color: teal;
+    }
+}
+
+div.dsc {
+    font-size: 0.5em;
+}

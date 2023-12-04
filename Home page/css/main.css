@@ -1785,7 +1785,7 @@ header .header-logo a {
 
 .home-content-tablecell h1 {
   font-family: "montserrat-bold", serif;
-  font-size: 7.5rem;
+  font-size: 7rem;
   line-height: 1.133;
   color: #ffffff;
 }
@@ -1926,7 +1926,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
     font-size: 2.1rem;
   }
   .home-content-tablecell h1 {
-    font-size: 7rem;
+    font-size: 6.5rem;
   }
 }
 
