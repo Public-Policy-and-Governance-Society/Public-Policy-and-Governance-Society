@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Uniform Civil Code| Blog | Civil services Club</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="blog1.css" />
+    <link rel="stylesheet" href="blog.imgText.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="../js/modernizr.js%2bpace.min.js.pagespeed.jc.OkXcmMKfmj.js"></script>
+    <script>
+      eval(mod_pagespeed_0fd9azBvCP);
+    </script>
+    <script>
+      eval(mod_pagespeed_JR7XQi9G3W);
+    </script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script nonce="02f433e8-fab8-45d5-ad82-41726ecf65aa">
+      (function (w, d) {
+        !(function (a, e, t, r) {
+          a.zarazData = a.zarazData || {};
+          a.zarazData.executed = [];
+          a.zaraz = {
+            deferred: [],
+          };
+          a.zaraz.q = [];
+          a.zaraz._f = function (e) {
+            return function () {
+              var t = Array.prototype.slice.call(arguments);
+              a.zaraz.q.push({
+                m: e,
+                a: t,
+              });
+            };
+          };
+          for (const e of ["track", "set", "ecommerce", "debug"])
+            a.zaraz[e] = a.zaraz._f(e);
+          a.zaraz.init = () => {
+            var t = e.getElementsByTagName(r)[0],
+              z = e.createElement(r),
+              n = e.getElementsByTagName("title")[0];
+            n && (a.zarazData.t = e.getElementsByTagName("title")[0].text);
+            a.zarazData.x = Math.random();
+            a.zarazData.w = a.screen.width;
+            a.zarazData.h = a.screen.height;
+            a.zarazData.j = a.innerHeight;
+            a.zarazData.e = a.innerWidth;
+            a.zarazData.l = a.location.href;
+            a.zarazData.r = e.referrer;
+            a.zarazData.k = a.screen.colorDepth;
+            a.zarazData.n = e.characterSet;
+            a.zarazData.o = new Date().getTimezoneOffset();
+            a.zarazData.q = [];
+            for (; a.zaraz.q.length; ) {
+              const e = a.zaraz.q.shift();
+              a.zarazData.q.push(e);
+            }
+            z.defer = !0;
+            for (const e of [localStorage, sessionStorage])
+              Object.keys(e || {})
+                .filter((a) => a.startsWith("_zaraz_"))
+                .forEach((t) => {
+                  try {
+                    a.zarazData["z_" + t.slice(7)] = JSON.parse(e.getItem(t));
+                  } catch {
+                    a.zarazData["z_" + t.slice(7)] = e.getItem(t);
+                  }
+                });
+            z.referrerPolicy = "origin";
+            z.src =
+              "../../cdn-cgi/zaraz/sd0d9.js?z=" +
+              btoa(encodeURIComponent(JSON.stringify(a.zarazData)));
+            t.parentNode.insertBefore(z, t);
+          };
+          ["complete", "interactive"].includes(e.readyState)
+            ? zaraz.init()
+            : a.addEventListener("DOMContentLoaded", zaraz.init);
+        })(w, d, 0, "script");
+      })(window, document);
+    </script>
+    <!-- dropdown css -->
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .faqs-container {
+        margin: 0 auto;
+        max-width: 600px;
+      }
+
+      .faq {
+        background-color: transparent;
+        border: 1px solid #9fa4a8;
+        border-radius: 10px;
+        padding: 30px;
+        position: relative;
+        overflow: hidden;
+        margin: 20px 0;
+        transition: 0.3s ease;
+      }
+
+      .faq .active {
+        background-color: #fff;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .faq.active::after,
+      .faq.active::before {
+        color: #2ecc71;
+        content: "\f075";
+        font-family: "Font Awesome 5 Free";
+        font-size: 7rem;
+        position: absolute;
+        opacity: 0.2;
+        top: 20px;
+        left: 20px;
+        z-index: 0;
+      }
+
+      .faq.active::before {
+        color: #3498db;
+        top: -10px;
+        left: -30px;
+        transform: rotateY(180deg);
+      }
+
+      .faq-title {
+        margin: 0 35px 0 0;
+      }
+
+      .faq-text {
+        display: none;
+        margin: 30px 0 0;
+      }
+
+      .faq.active {
+        display: block;
+      }
+
+      .faq-toggle {
+        background-color: transparent;
+        border: none;
+        border-radius: 50%;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        padding: 0;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        height: 30px;
+        width: 30px;
+      }
+
+      .faq-toggle:focus {
+        outline: none;
+      }
+
+      .faq .active .faq-toggle {
+        background-color: #9fa4a8;
+      }
+
+      .faq-toggle .fa-times {
+        display: none;
+      }
+
+      .faq .active .faq-toggle .fa-times {
+        display: block;
+      }
+
+      .faq-toggle .fa-chevron-down {
+        color: #83888e;
+      }
+
+      .faq .active .faq-toggle .fa-chevron-down {
+        display: none;
+      }
+      a {
+        color: rgb(255, 152, 1);
+      }
+    </style>
+    <!-- cards styling -->
+    <style>
+      /* Follow me on: https://dribbble.com/Curtis_A_Lee */
+      /* Check out my website: https://thatboycurt.com/ */
+      /* *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+      }
+      html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 6rem;
+        background-color: #f5f5f5;
+        font-family: "Inter", sans-serif;
+      }
+      @media (max-width: 60em) {
+        body {
+          padding: 3rem;
+        }
+      } */
+      .grid-blog-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        /* width: 114rem; */
+        /* grid-gap: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); */
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+      @media screen and (max-width: 480px) {
+        .card-blog-card {
+          width: 27rem;
+          height: 51rem;
+        }
+        img{
+          height: 23rem;
+        }
+      }
+      .grid-blog-card .card-blog-card {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        width: 35rem;
+        height: 60rem;
+        margin-bottom: 5rem;
+        align-items: center;
+        border-radius: 0.4rem;
+        overflow: hidden;
+        box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: 0.2s;
+      }
+      .grid-blog-card .card-blog-card:hover {
+        transform: translateY(-0.5%);
+        box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+      }
+      .card__img-blog-card {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 20rem;
+      }
+      .card__img-blog-card img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .grid-blog-card .card__content-blog-card {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-row-gap: 2rem;
+        padding: 2rem;
+        height: 100%;
+      }
+      .grid-blog-card .card__header-blog-card {
+        font-size: 3rem;
+        font-weight: 500;
+        color: #0d0d0d;
+        text-align: center;
+      }
+      h1 {
+        margin-top: 1rem;
+        margin-bottom: -1rem;
+      }
+      .grid-blog-card .card__text-blog-card {
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        line-height: 1.7;
+        color: #3d3d3d;
+        margin-bottom: 2.5rem;
+        text-align: center;
+      }
+      .grid-blog-card .card__btn-blog-card {
+        display: block;
+        width: 100%;
+        padding: 1.5rem 0p;
+        font-size: 2rem;
+        text-align: center;
+        color: #3363ff;
+        background-color: #e6ecff;
+        border: none;
+        border-radius: 0.4rem;
+        transition: 0.2s;
+        cursor: pointer;
+      }
+      .grid-blog-card .card__btn-blog-card span {
+        margin-left: 1rem;
+        transition: 0.2s;
+      }
+      .grid-blog-card .card__btn-blog-card:hover,
+      .grid-blog-card .card__btn-blog-card:active {
+        background-color: #dce4ff;
+      }
+      .grid-blog-card .card__btn-blog-card:hover span,
+      .grid-blog-card .card__btn-blog-card:active span {
+        margin-left: 1.5rem;
+      }
+      .cards-section-blog {
+        background-color: white;
+        justify-content: center;
+      }
+    </style>
+    <!-- <script>
+        // const toggles = document.querySelectorAll('.faq-toggle');
+
+        // toggles.forEach(toggle => {
+        //     toggle.addEventListener('click', () => {
+        //         toggle.parentNode.classList.toggle('active');
+        //     });
+        // });
+        let fachevrondown = document.getElementsByClassName("fa-chevron-down");
+        let fatimes = document.getElementsByClassName("fa-times");
+        let faqtext = document.getElementsByClassName("faq-text");
+        let faqtoggle = document.getElementsByClassName("faq-toggle");
+        faqtoggle.addEventListener('click', () => {
+            console.log('clicked');
+            faqtext.style.display = 'block';
+            fatimes.style.display = 'block';
+            fachevrondown.style.display = 'none';
+
+        });
+        fatimes.addEventListener('click', () => {
+            faqtext.style.display = 'none';
+            fatimes.style.display = 'none';
+            fachevrondown.style.display = 'block';
+        });
+
+        // SOCIAL PANEL JS
+        const floating_btn = document.querySelector('.floating-btn');
+        const close_btn = document.querySelector('.close-btn');
+        const social_panel_container = document.querySelector('.social-panel-container');
+
+        floating_btn.addEventListener('click', () => {
+            social_panel_container.classList.toggle('visible')
+        });
+
+        close_btn.addEventListener('click', () => {
+            social_panel_container.classList.remove('visible')
+        });
+    </script> -->
+  </head>
+  <!--Start of the page-->
+
+  <body id="top">
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+    <!--#01 Navbar-->
+    <header class="s-header">
+      <div class="header-logo">
+        <a class="site-logo" href="../index.html">
+          <img src="../images/logo.png" alt="Homepage" />
+        </a>
+      </div>
+      <nav class="row header-nav-wrap wide">
+        <ul class="header-main-nav">
+          <li><a href="../index.html" title="intro">Home</a></li>
+          <li class="current">
+            <a href="../blog.html" title="blog" style="color: rgb(255, 152, 1)"
+              >Blog</a
+            >
+          </li>
+        </ul>
+        <ul class="header-social">
+          <li>
+            <a
+              href="https://www.facebook.com/civilservicesclub.iitkgp/"
+              target="_blank"
+              ><i class="fa-brands fa-facebook" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/civilservicesclub.iitkgp/reels/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/@civilservicesclub.iitkgp"
+              target="_blank"
+              ><i class="fa-brands fa-youtube" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/civil-services-club-iitkgp"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+    </header>
+    <!--NavBar ends-->
+    <!--Article Starts-->
+    <article class="blog-single">
+      <!--Hero Section starts-->
+      <div
+        class="page-header page-header--single"
+        style="
+          background-image: url(http://ummid.com/news/2018/September/01.09.2018/uniform-civil-code.jpg);
+        "
+      >
+        <div class="row page-header__content">
+          <div class="col-full">
+            <h1 class="display-1">UNIFORM CIVIL CODE</h1>
+            <ul class="page-header__meta">
+              <li class="author">
+                By: <a href="#">Saksham Singh and Venkata kartheek Naik</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--Hero Section Ends-->
+      <!-- cards section starts -->
+      <div class="cards-section-blog">
+        <div class="grid-blog-card">
+          <div class="card-blog-card">
+            <div class="card_img-blog-card">
+              <img
+                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                alt="snowy mountain" style="max-width: 100%; height: 34rem;"
+              />
+            </div>
+            <div class="card__content-blog-card">
+              <h1 class="card__header-blog-card">A starry night</h1>
+              <div class="card__text-wrapper-blog-card">
+                <p class="card__text-blog-card">
+                  Look up at the night sky, and find yourself
+                  <strong>immersed</strong> in the amazing mountain range of
+                  Aspen
+                </p>
+                <button class="card__btn-blog-card">
+                  Explore <span>&rarr;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-blog-card">
+            <div class="card_img-blog-card">
+              <img
+                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                alt="snowy mountain" style="max-width: 100%; height: 34rem;"
+              />
+            </div>
+            <div class="card__content-blog-card">
+              <h1 class="card__header-blog-card">A starry night</h1>
+              <div class="card__text-wrapper-blog-card">
+                <p class="card__text-blog-card">
+                  Look up at the night sky, and find yourself
+                  <strong>immersed</strong> in the amazing mountain range of
+                  Aspen
+                </p>
+                <button class="card__btn-blog-card">
+                  Explore <span>&rarr;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-blog-card">
+            <div class="card_img-blog-card">
+              <img
+                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                alt="snowy mountain" style="max-width: 100%; height: 34rem;"
+              />
+            </div>
+            <div class="card__content-blog-card">
+              <h1 class="card__header-blog-card">A starry night</h1>
+              <div class="card__text-wrapper-blog-card">
+                <p class="card__text-blog-card">
+                  Look up at the night sky, and find yourself
+                  <strong>immersed</strong> in the amazing mountain range of
+                  Aspen
+                </p>
+                <button class="card__btn-blog-card">
+                  Explore <span>&rarr;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="grid-blog-card">
+          <div class="card-blog-card">
+            <div class="card_img-blog-card">
+              <img
+                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                alt="snowy mountain" style="max-width: 100%; height: 34rem;"
+              />
+            </div>
+            <div class="card__content-blog-card">
+              <h1 class="card__header-blog-card">A starry night</h1>
+              <div class="card__text-wrapper-blog-card">
+                <p class="card__text-blog-card">
+                  Look up at the night sky, and find yourself
+                  <strong>immersed</strong> in the amazing mountain range of
+                  Aspen
+                </p>
+                <button class="card__btn-blog-card">
+                  Explore <span>&rarr;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-blog-card">
+            <div class="card_img-blog-card">
+              <img
+                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                alt="snowy mountain" style="max-width: 100%; height: 34rem;"
+              />
+            </div>
+            <div class="card__content-blog-card">
+              <h1 class="card__header-blog-card">A starry night</h1>
+              <div class="card__text-wrapper-blog-card">
+                <p class="card__text-blog-card">
+                  Look up at the night sky, and find yourself
+                  <strong>immersed</strong> in the amazing mountain range of
+                  Aspen
+                </p>
+                <button class="card__btn-blog-card">
+                  Explore <span>&rarr;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-blog-card">
+            <div class="card_img-blog-card">
+              <img
+                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                alt="snowy mountain" style="max-width: 100%; height: 34rem;"
+              />
+            </div>
+            <div class="card__content-blog-card">
+              <h1 class="card__header-blog-card">A starry night</h1>
+              <div class="card__text-wrapper-blog-card">
+                <p class="card__text-blog-card">
+                  Look up at the night sky, and find yourself
+                  <strong>immersed</strong> in the amazing mountain range of
+                  Aspen
+                </p>
+                <button class="card__btn-blog-card">
+                  Explore <span>&rarr;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="grid-blog-card">
+          <div class="card-blog-card">
+            <div class="card_img-blog-card">
+              <img
+                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                alt="snowy mountain" style="max-width: 100%; height: 34rem;"
+              />
+            </div>
+            <div class="card__content-blog-card">
+              <h1 class="card__header-blog-card">A starry night</h1>
+              <div class="card__text-wrapper-blog-card">
+                <p class="card__text-blog-card">
+                  Look up at the night sky, and find yourself
+                  <strong>immersed</strong> in the amazing mountain range of
+                  Aspen
+                </p>
+                <button class="card__btn-blog-card">
+                  Explore <span>&rarr;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-blog-card">
+            <div class="card_img-blog-card">
+              <img
+                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                alt="snowy mountain" style="max-width: 100%; height: 34rem;"
+              />
+            </div>
+            <div class="card__content-blog-card">
+              <h1 class="card__header-blog-card">A starry night</h1>
+              <div class="card__text-wrapper-blog-card">
+                <p class="card__text-blog-card">
+                  Look up at the night sky, and find yourself
+                  <strong>immersed</strong> in the amazing mountain range of
+                  Aspen
+                </p>
+                <button class="card__btn-blog-card">
+                  Explore <span>&rarr;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-blog-card">
+            <div class="card_img-blog-card">
+              <img
+                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                alt="snowy mountain" style="max-width: 100%; height: 34rem;"
+              />
+            </div>
+            <div class="card__content-blog-card">
+              <h1 class="card__header-blog-card">A starry night</h1>
+              <div class="card__text-wrapper-blog-card">
+                <p class="card__text-blog-card">
+                  Look up at the night sky, and find yourself
+                  <strong>immersed</strong> in the amazing mountain range of
+                  Aspen
+                </p>
+                <button class="card__btn-blog-card">
+                  Explore <span>&rarr;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- card section ends -->
+    </article>
+
+    <!--Footer newletter-->
+    <section id="contacts">
+      <footer class="s-footer footer">
+        <div class="row footer__bottom">
+          <div class="col-five tab-full">
+            <div class="footer__logo">
+              <a href="../index.html">
+                <img src="../images/logo.png" alt="Homepage" />
+              </a>
+            </div>
+            <p>Location : IIT Kharagpur, Kharagpur, WB, India</p>
+            <ul class="footer__social">
+              <li>
+                <a
+                  href="https://www.facebook.com/civilservicesclub.iitkgp/"
+                  target="_blank"
+                  ><i class="fa-brands fa-facebook" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/civilservicesclub.iitkgp/reels/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@civilservicesclub.iitkgp"
+                  target="_blank"
+                  ><i class="fa-brands fa-youtube" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/civil-services-club-iitkgp"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-six tab-full end">
+            <ul class="footer__site-links">
+              <li class="current" class="smoothscroll">
+                <a href="index.html" title="intro">Home</a>
+              </li>
+              <li class="current" class="smoothscroll">
+                <a href="about.html" title="intro">About</a>
+              </li>
+              <li class="current" class="smoothscroll">
+                <a href="Faqs.html" title="intro">FAQS</a>
+              </li>
+              <li class="current" class="smoothscroll">
+                <a href="team.html" title="intro">Team</a>
+              </li>
+            </ul>
+            <p class="footer__contact">
+              Do you have a question? Send us a word: <br />
+              <a
+                href="civilservicesclub.iitkgp@gmail.com"
+                class="footer__mail-link"
+                ><span class="__cf_email__" style="color: rgb(255, 152, 1)"
+                  >civilservicesclub.iitkgp@gmail.com</span
+                ></a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="go-top">
+          <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+      </footer>
+    </section>
+
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="plugins.js"></script>
+    <script src="main.js"></script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-23581568-13");
+    </script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
+      integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
+      data-cf-beacon='{"rayId":"73602870f89e33b4","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.6.0","si":100}'
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // const toggles = document.querySelectorAll('.faq-toggle');
+
+      // toggles.forEach(toggle => {
+      //     toggle.addEventListener('click', () => {
+      //         toggle.parentNode.classList.toggle('active');
+      //     });
+      // });
+      let fachevrondown = document.getElementsByClassName("fa-chevron-down");
+      let fatimes = document.getElementsByClassName("fa-times");
+      let faqtext = document.getElementsByClassName("faq-text");
+      let faqtoggle = document.getElementsByClassName("faq-toggle");
+      for (let i = 0; i < faqtoggle.length; i++) {
+        faqtoggle[i].addEventListener("click", () => {
+          if (faqtext[i].style.display != "block") {
+            console.log("clicked");
+            faqtext[i].style.display = "block";
+            fatimes[i].style.display = "block";
+            fachevrondown[i].style.display = "none";
+          } else {
+            console.log("clicked");
+            faqtext[i].style.display = "none";
+            fatimes[i].style.display = "none";
+            fachevrondown[i].style.display = "block";
+          }
+        });
+      }
+
+      // SOCIAL PANEL JS
+      const floating_btn = document.querySelector(".floating-btn");
+      const close_btn = document.querySelector(".close-btn");
+      const social_panel_container = document.querySelector(
+        ".social-panel-container"
+      );
+
+      floating_btn.addEventListener("click", () => {
+        social_panel_container.classList.toggle("visible");
+      });
+
+      close_btn.addEventListener("click", () => {
+        social_panel_container.classList.remove("visible");
+      });
+    </script>
+  </body>
+</html>
