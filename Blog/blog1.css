@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,400i,500,600,700|IBM+Plex+Serif:300,300i,400,500,600,700);
+/* @import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,400i,500,600,700|IBM+Plex+Serif:300,300i,400,500,600,700);
 @import url(font-awesome/css/fontawesome-all.css);
-@import url(micons/micons.css);
+@import url(micons/micons.css); */
 html {
     font-family: sans-serif;
     line-height: 1.15;
@@ -141,7 +141,7 @@ button,
 html [type="button"],
 [type="reset"],
 [type="submit"] {
-    -webkit-appearance: button
+    appearance: button; 
 }
 
 button::-moz-focus-inner,
@@ -156,7 +156,7 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-    outline: 1px dotted ButtonText
+    outline: 1px dotted; 
 }
 
 fieldset {
@@ -1000,7 +1000,7 @@ body[data-aos-easing="ease-in-sine"] [data-aos] {
     text-align: center !important;
     right: 20px;
     top: 20px;
-    -webkit-appearance: none;
+     appearance: none;
     cursor: pointer;
     text-decoration: none;
     text-align: center;
@@ -1092,7 +1092,7 @@ body[data-aos-easing="ease-in-sine"] [data-aos] {
     pointer-events: auto;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    -webkit-overflow-scrolling: touch
+    -webkit-overflow-scrolling: touch;
 }
 
 .lity-iframe-container iframe {
@@ -1198,7 +1198,7 @@ ol.linenums {
     margin-bottom: 0
 }
 
-@charset "UTF-8";
+
 html {
     font-size: 10px
 }
