@@ -31,7 +31,7 @@ document.addEventListener('scroll', function() {
     } else {
         set = 0;
         box.style.transform = "translateY(0px)";
-        video.style.opacity = "0";
+        video.style.opacity = "0.9";
         heading.style.padding = "10vw 0 0 0"
         // console.log(heading)
         // boxMid.style = "height: 00px";
