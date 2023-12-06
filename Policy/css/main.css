@@ -1406,10 +1406,10 @@ header .logo a {
     font: 0/0 a;
     text-shadow: none;
     color: transparent;
-    width: 80px;
-    height: 80px;
-    background: url("../images/logo\ copy.png") no-repeat center;
-    background-size: 80px 80px;
+    width: 50px;
+    height: 50px;
+    background: url("../images/logo.png") no-repeat center;
+    background-size: 50px 50px;
 }
 
 header a:hover {
