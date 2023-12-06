@@ -665,7 +665,7 @@ footer a i {
 }
 
 .icon-image {
-    width: 180px;
+    width: 80px;
     position: relative;
     top: -30px;
 }
@@ -1014,7 +1014,7 @@ Responsive media queries
         font-size: 24px;
     }
     #img-ecell-footer {
-        width: 40vw;
+        width: 100px;
         margin: auto;
     }
     footer {
