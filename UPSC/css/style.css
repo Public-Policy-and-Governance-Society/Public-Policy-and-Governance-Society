@@ -1434,7 +1434,7 @@ hr {
 .slider img {
     object-fit: contain;
     padding: 10px 20px;
-    height: 100px;
+    height: 270px;
     width: 250px;
 }
 
@@ -1467,8 +1467,9 @@ hr {
 }
 
 .slider .slide {
-    height: 100px;
+    height: 323px;
     width: 230px;
+    margin: 0px 40px;
 }
 
 #partners img {
