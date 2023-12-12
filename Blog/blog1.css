@@ -247,7 +247,7 @@ button {
     -webkit-font-smoothing: antialiased
 }
 
-img,
+
 video {
     max-width: 86%;
     height: 400px;
@@ -1081,7 +1081,7 @@ body[data-aos-easing="ease-in-sine"] [data-aos] {
 .lity-close:active::after,
 .lity-close:visited::before,
 .lity-close:visited::after {
-    background-color: #2576FD;
+    background-color: rgb(255, 152, 1);
 }
 
 .lity-iframe-container {
@@ -1227,7 +1227,7 @@ body {
 }
 
 a {
-    color: #2576FD;
+    color: rgb(255, 152, 1);
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out
 }
@@ -1563,7 +1563,7 @@ ul.disc li::before {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #2576FD;
+    background: rgb(255, 152, 1);
     position: absolute;
     left: -16px;
     top: 11px;
@@ -1572,7 +1572,7 @@ ul.disc li::before {
 
 dt {
     margin: 0;
-    color: #2576FD;
+    color: rgb(255, 152, 1);
 }
 
 dd {
@@ -1676,7 +1676,7 @@ form,
 }
 
 .pace .pace-progress {
-    background: #2576FD;
+    background: rgb(255, 152, 1);
     position: fixed;
     z-index: 900;
     top: 0;
@@ -1710,7 +1710,7 @@ form,
     margin-left: -30px;
     margin-top: -30px;
     padding: 0;
-    background-color: #2576FD;
+    background-color: rgb(255, 152, 1);
     border-radius: 100%;
     -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
     animation: sk-scaleout 1.0s infinite ease-in-out
@@ -1822,7 +1822,7 @@ textarea:focus,
 select:focus {
     color: #000;
     box-shadow: 0 0 5px rgba(0, 166, 80, .8);
-    border: 1px solid #2576FD; 
+    border: 1px solid rgb(255, 152, 1); 
 }
 
 label,
@@ -1867,7 +1867,7 @@ textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-    -webkit-text-fill-color: #2576FD;
+    -webkit-text-fill-color: rgb(255, 152, 1);
     transition: background-color 5000s ease-in-out 0s
 }
 
@@ -1919,8 +1919,8 @@ button.btn--primary,
 input[type="submit"].btn--primary,
 input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
-    background: #2576FD;
-    border-color: #2576FD;
+    background: rgb(255, 152, 1);
+    border-color: rgb(255, 152, 1);
     color: #fff
 }
 
@@ -1934,8 +1934,8 @@ button.btn--primary:focus,
 input[type="submit"].btn--primary:focus,
 input[type="reset"].btn--primary:focus,
 input[type="button"].btn--primary:focus {
-    background: #2576FD;
-    border-color: #2576FD;
+    background: rgb(255, 152, 1);
+    border-color: rgb(255, 152, 1);
 }
 
 .btn.full-width,
@@ -2100,7 +2100,7 @@ input::-moz-focus-inner {
 }
 
 .stats-tabs li a:hover {
-    color: #2576FD;
+    color: rgb(255, 152, 1);
 }
 
 .stats-tabs li a em {
@@ -2233,7 +2233,7 @@ input::-moz-focus-inner {
 
 .pgn .current,
 .pgn .current:hover {
-    background-color: #2576FD;
+    background-color: rgb(255, 152, 1);
     color: #fff
 }
 
@@ -2320,7 +2320,7 @@ input::-moz-focus-inner {
 
 .subhead {
     margin-top: 0;
-    color: #2576FD;
+    color: rgb(255, 152, 1);
     font-size: 2.4rem;
     line-height: 1.1667;
     margin-bottom: .8rem
@@ -2345,7 +2345,7 @@ input::-moz-focus-inner {
     display: inline-block;
     height: 1px;
     width: 320px;
-    background-color: #2576FD;
+    background-color: rgb(255, 152, 1);
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -2406,7 +2406,7 @@ input::-moz-focus-inner {
 
 .slick-slider .slick-dots li.slick-active button,
 .slick-slider .slick-dots li:hover button {
-    background: #2576FD;
+    background: rgb(255, 152, 1);
 }
 
 @media only screen and (max-width:1200px) {
@@ -2509,7 +2509,8 @@ input::-moz-focus-inner {
 }
 
 .header-logo img {
-    width: 175px;
+    width: 70px;
+    height: 70px;
 }
 
 .header-nav-wrap {
@@ -2545,11 +2546,11 @@ input::-moz-focus-inner {
 
 .header-nav-wrap .header-main-nav li a:hover,
 .header-nav-wrap .header-main-nav li a:focus {
-    color: #2576FD;
+    color: rgb(255, 152, 1);
 }
 
 .header-nav-wrap .header-main-nav li.current a {
-    color: #2576FD;
+    color: rgb(255, 152, 1);
 }
 
 .header-nav-wrap .header-social {
@@ -2584,7 +2585,7 @@ input::-moz-focus-inner {
 
 .header-nav-wrap .header-social li a:hover,
 .header-nav-wrap .header-social li a:focus {
-    background-color: #2576FD; 
+    background-color: rgb(255, 152, 1); 
 }
 
 .s-header--blog .header-social li a {
@@ -2699,7 +2700,8 @@ input::-moz-focus-inner {
 
 @media only screen and (max-width:1200px) {
     .header-logo img {
-        width: 135px;
+        width: 50px;
+        height: 50px;
     }
     .header-nav-wrap .header-main-nav {
         padding-left: 230px
@@ -2731,7 +2733,8 @@ input::-moz-focus-inner {
         left: 40px
     }
     .header-logo img {
-        width: 130px;
+        width: 50px;
+        width: 50px;
     }
     .header-nav-wrap {
         display: none;
@@ -2780,7 +2783,8 @@ input::-moz-focus-inner {
         left: 36px
     }
     .header-logo img {
-        width: 125px;
+        width: 50px;
+        width: 50px;
     }
     .header-nav-wrap {
         padding: 120px 40px 64px
@@ -2875,7 +2879,7 @@ input::-moz-focus-inner {
     content: "";
     height: 2px;
     width: 8rem;
-    background-color: #2576FD; 
+    background-color: rgb(255, 152, 1); 
     position: absolute;
     left: 8px;
     top: 0
@@ -2950,11 +2954,11 @@ input::-moz-focus-inner {
 }
 
 .btn-video:hover::after {
-    color: #2576FD;
+    color: rgb(255, 152, 1);
 }
 
 .btn-video:hover .video-icon {
-    background-color: #2576FD; 
+    background-color: rgb(255, 152, 1); 
     background-image: url(https://preview.colorlib.com/theme/standout/images/icons/icon-play.svg)
 }
 
@@ -3315,7 +3319,7 @@ html.cl-loaded .home-content__main {
 .s-about {
     padding-top: 20rem;
     padding-bottom: 0;
-    background-color: #2576FD; 
+    background-color: rgb(255, 152, 1); 
     color: rgba(255, 255, 255, .8);
     overflow: hidden;
     position: relative
@@ -3434,7 +3438,7 @@ html.cl-loaded .home-content__main {
     font-weight: 700;
     text-align: center;
     color: #fff;
-    background-color: #2576FD; 
+    background-color: rgb(255, 152, 1); 
     height: 4.8rem;
     width: 4.8rem;
     border-radius: 50%;
@@ -3473,7 +3477,7 @@ html.cl-loaded .home-content__main {
 
 .item-feature__icon {
     float: left;
-    color: #2576FD;
+    color: rgb(255, 152, 1);
     font-size: 4.8rem;
     margin-top: -1.8rem
 }
@@ -3608,7 +3612,7 @@ html.cl-loaded .home-content__main {
 
 .testimonials__name {
     font-weight: 700;
-    color: #2576FD; 
+    color: rgb(255, 152, 1); 
     margin-right: 4px
 }
 
@@ -3707,7 +3711,7 @@ html.cl-loaded .home-content__main {
 }
 
 .item-plan--popular .item-plan__block {
-    background-color: #2576FD;
+    background-color: rgb(255, 152, 1);
     border: none
 }
 
@@ -3777,7 +3781,7 @@ html.cl-loaded .home-content__main {
 
 .s-download {
     padding-top: 12rem;
-    background-color: #2576FD;
+    background-color: rgb(255, 152, 1);
     color: rgba(255, 255, 255, .8);
     overflow: hidden;
     position: relative
@@ -3893,11 +3897,11 @@ html.cl-loaded .home-content__main {
 
 .s-footer a:hover,
 .s-footer a:focus {
-    color: #2576FD; 
+    color: rgb(255, 152, 1); 
 }
 
 .s-footer .display-2 {
-    color: #2576FD;
+    color: rgb(255, 152, 1);
     margin-bottom: 1.6rem
 }
 
@@ -3975,8 +3979,8 @@ html.cl-loaded .home-content__main {
 
 .footer__subscribe #mc-form input[type="submit"] {
     color: #fff;
-    background: #2576FD;;
-    border-color: #2576FD;
+    background: rgb(255, 152, 1);;
+    border-color: rgb(255, 152, 1);
     margin-right: 0;
     padding: 0 20px 0 24px;
     height: 6.4rem;
@@ -4013,7 +4017,8 @@ html.cl-loaded .home-content__main {
 }
 
 .footer__logo img {
-    width: 150px;
+    width: 50px;
+        width: 50px;
 }
 
 .footer__social {
@@ -4041,7 +4046,7 @@ html.cl-loaded .home-content__main {
 
 .footer__social li a:hover,
 .footer__social li a:focus {
-    background-color: #2576FD;
+    background-color: rgb(255, 152, 1);
     color: #fff
 }
 
@@ -4077,7 +4082,7 @@ html.cl-loaded .home-content__main {
 
 .footer__site-links li a:hover,
 .footer__site-links li a:focus {
-    color: #2576FD;
+    color: rgb(255, 152, 1);
 }
 
 .footer__contact {
@@ -4088,7 +4093,7 @@ html.cl-loaded .home-content__main {
     font-weight: 600;
     font-size: 1.9rem;
     line-height: 1.455;
-    color: #2576FD;
+    color: rgb(255, 152, 1);
 }
 
 .footer__contact .footer__mail-link:hover,
@@ -4153,7 +4158,7 @@ html.cl-loaded .home-content__main {
 .go-top a:focus,
 .go-top a:visited:hover,
 .go-top a:visited:focus {
-    background-color: #2576FD;
+    background-color: rgb(255, 152, 1);
 }
 
 .go-top.link-is-visible {
@@ -4184,7 +4189,8 @@ html.cl-loaded .home-content__main {
         padding-top: 12rem
     }
     .footer__logo img {
-        width: 150px;
+        width: 50px;
+        width: 50px;
     }
     .footer__site-links {
         margin-top: 8rem
@@ -4294,7 +4300,7 @@ a.page-header__search-trigger span {
 
 a.page-header__search-trigger:hover span,
 a.page-header__search-trigger:focus span {
-    color: #2576FD;
+    color: rgb(255, 152, 1);
 }
 
 .page-header__search {
@@ -4409,7 +4415,7 @@ a.page-header__search-trigger:focus span {
 
 .page-header__overlay-close:hover::before,
 .page-header__overlay-close:hover::after {
-    background-color: #2576FD;
+    background-color: rgb(255, 152, 1);
 }
 
 .page-header__overlay-close::before,
@@ -4667,7 +4673,7 @@ body.search-is-visible {
 
 .entries .more-link:hover,
 .entries .more-link:focus {
-    color: #2576FD;
+    color: rgb(255, 152, 1);
 }
 
 .entries-wrap+.pagination-wrap {
@@ -4777,7 +4783,7 @@ body.search-is-visible {
 
 .blog-single-nav a:hover,
 .blog-single-nav a:focus {
-    color: #2576FD; 
+    color: rgb(255, 152, 1); 
 }
 
 .blog-single-nav__prev {
