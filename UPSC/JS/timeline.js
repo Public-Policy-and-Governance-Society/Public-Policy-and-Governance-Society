@@ -7,8 +7,8 @@ function checkVisible(elm) {
 
 const box = document.querySelector('.timeline3');
 const box1 = document.querySelector('.timeline2');
-const video = document.querySelector('#myVideo')
-const heading = document.querySelector('.investing')
+const video = document.querySelector('#myVideo');
+const heading = document.querySelector('.heading');
 // const boxMid = document.querySelector('.timeline-mid');
 // boxMid.style.backgroundColor = "white";
 // const message = document.querySelector('#message');
@@ -23,16 +23,16 @@ document.addEventListener('scroll', function() {
         set = 1;
         var translateDistance = window.innerWidth * 0.5;
         box.style.transform = `translateY(53vw)`;
-        heading.style.padding = "48vw 0 0 0"
+        heading.style.padding = "20vw 0 0 0";
         // console.log(box.style)
         video.style.opacity = "0.9";
         // boxMid.style  = "height: 200px";
 
     } else {
         set = 0;
-        box.style.transform = "translateY(0px)";
+        box.style.transform = "translateY(10px)";
         video.style.opacity = "0.9";
-        heading.style.padding = "10vw 0 0 0"
+        heading.style.padding = "5vw 0 0 0";
         // console.log(heading)
         // boxMid.style = "height: 00px";
     }
