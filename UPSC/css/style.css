@@ -1131,6 +1131,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .part2 .team .name {
