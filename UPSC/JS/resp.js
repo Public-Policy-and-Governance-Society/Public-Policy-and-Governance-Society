@@ -39,7 +39,7 @@ window.addEventListener("scroll", function() {
 // Navigation effect on Scrolling
 
 window.addEventListener("scroll", () => {
-    const sections = document.querySelectorAll("section");
+    const sections = document.querySelectorAll(".section");
     const scrollY = window.pageYOffset;
 
     sections.forEach((current) => {
@@ -48,13 +48,9 @@ window.addEventListener("scroll", () => {
         let id = current.getAttribute("id");
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document
-                .querySelector(".navlinks ul li a[href*=" + id + "]")
-                .classList.add("active");
+            document.querySelector(".navlinks ul li a[href*=" + id + "]").classList.add("active");
         } else {
-            document
-                .querySelector(".navlinks ul li a[href*=" + id + "]")
-                .classList.remove("active");
+            document.querySelector(".navlinks ul li a[href*=" + id + "]").classList.remove("active");
         }
     });
 });
