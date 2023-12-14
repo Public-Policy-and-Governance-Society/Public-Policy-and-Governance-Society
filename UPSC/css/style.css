@@ -52,7 +52,7 @@ li {
 
 .header {
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0), rgba(4, 9, 30, 0.1)), url(../img/greybg.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0), rgba(4, 9, 30, 0.1)), url(../img/greybg.webp);
     background-position: center;
     background-size: cover;
     position: relative;

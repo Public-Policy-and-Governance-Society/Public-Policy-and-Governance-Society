@@ -1720,7 +1720,7 @@ ul#nav li.current a:after {
     /* height: 100%; */
     background-color: black;
     padding-top: 30px;
-    background-image: url(../images/Forvideo-01.png);
+    background-image: url(../images/Forvideo-01.webp);
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;

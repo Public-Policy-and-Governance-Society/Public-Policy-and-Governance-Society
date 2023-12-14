@@ -300,7 +300,7 @@ header.sticky .nav-bar {
     padding: 3rem 6rem 4rem;
 }
 
-.policy {
+.Policy {
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
@@ -308,7 +308,7 @@ header.sticky .nav-bar {
     margin: 70px auto;
 }
 
-.policy p {
+.Policy p {
     background: var(--card-bg-color);
     box-shadow: var(--box-shadow);
     border-bottom: 3px solid var(--second-color);
@@ -322,18 +322,18 @@ header.sticky .nav-bar {
     text-align: justify;
 }
 
-.policy p:hover {
+.Policy p:hover {
     transform: scale(1.03);
 }
 
-.policy h1 {
+.Policy h1 {
     letter-spacing: 2px;
     font-size: 1.8em;
     margin: 0 50px;
     padding: 0 50px;
 }
 
-.policy-mid {
+.Policy-mid {
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
@@ -341,7 +341,7 @@ header.sticky .nav-bar {
     margin: 70px auto;
 }
 
-.policy-mid p {
+.Policy-mid p {
     background: var(--card-bg-color);
     box-shadow: var(--box-shadow);
     border-bottom: 3px solid var(--second-color);
@@ -355,11 +355,11 @@ header.sticky .nav-bar {
     font-weight: 550;
 }
 
-.policy-mid p:hover {
+.Policy-mid p:hover {
     transform: scale(1.03);
 }
 
-.policy-mid h1 {
+.Policy-mid h1 {
     letter-spacing: 2px;
     font-size: 1.8em;
     margin: 0 50px;
@@ -799,7 +799,7 @@ footer a {
     margin-top: 25px;
 }
 
-.policy-logo {
+.Policy-logo {
     height: 35%;
     width: 35%;
 }
@@ -809,8 +809,8 @@ footer a {
     transition: all 0.6s ease;
 }
 
-.policy h1 span,
-.policy-mid h1 span {
+.Policy h1 span,
+.Policy-mid h1 span {
     font-size: 3.5em;
     margin-right: 10px;
     margin-bottom: 10px;

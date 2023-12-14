@@ -168,13 +168,13 @@
     margin-top: -30px;
 }
 
-.policy {
+.Policy {
     display: flex;
     margin: 45px 12px;
     flex-direction: column-reverse;
 }
 
-.policy p {
+.Policy p {
     padding: 25px;
     margin-top: 0px;
     font-size: var(--small-font-size);
@@ -182,20 +182,20 @@
     font-weight: 500;
 }
 
-.policy h1 {
+.Policy h1 {
     letter-spacing: 1px;
     font-size: 1.1em;
     margin: 2px 6px;
     padding: 2px 10px;
 }
 
-.policy-mid {
+.Policy-mid {
     display: flex;
     margin: 45px 12px;
     flex-direction: column;
 }
 
-.policy-mid p {
+.Policy-mid p {
     padding: 25px;
     margin-top: 0px;
     font-size: var(--small-font-size);
@@ -203,7 +203,7 @@
     font-weight: 500;
 }
 
-.policy-mid h1 {
+.Policy-mid h1 {
     letter-spacing: 1px;
     font-size: 1.1em;
     margin: 2px 6px;

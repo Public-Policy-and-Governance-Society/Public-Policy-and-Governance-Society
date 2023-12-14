@@ -114,7 +114,7 @@ ScrollReveal().reveal(".home .home-container .btn", {
     origin: "bottom",
 });
 ScrollReveal().reveal(
-    ".policy, .policy-mid, .center-line, .timeline-content, .contact-left, .contact-right, .block,.content .para1, .content .para", {
+    ".Policy, .Policy-mid, .center-line, .timeline-content, .contact-left, .contact-right, .block,.content .para1, .content .para", {
         delay: 600,
         origin: "bottom"
     }

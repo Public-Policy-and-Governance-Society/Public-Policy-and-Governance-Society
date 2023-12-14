@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("../upsc/img/timeline1.png");
+    background: url("../UPSC/img/timeline1.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -15,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("../upsc/img/timeline2.png");
+    background: url("../UPSC/img/timeline2.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
