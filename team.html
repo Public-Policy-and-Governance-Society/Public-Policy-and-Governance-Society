@@ -469,7 +469,7 @@
                 </div>
                 <img src="/team/img/Anup Chimkar.jpeg" alt="Anup Chimkar">
                 <div class="dsc">
-                    Sophomore of chemical engineering department <br>
+                    Anup Chimkar here, from the vibrant state of Maharashtra,blending into the precision of Chemical Engineering.You'll find me mastering rhythm of<br> Cricket,Sketching, Designing all<br> while swaying to music. <br>
                     <!-- <a href="https://www.facebook.com/isha.mukherjee.1023" class="fa fa-facebook"></a> -->
 
                     <a href="https://www.linkedin.com/in/anup-chimkar-376298255/" class="fa fa-linkedin" target="_blank";></a>
@@ -521,6 +521,30 @@
                     <!-- <a href="https://www.facebook.com/isha.mukherjee.1023" class="fa fa-facebook"></a> -->
 
                     <a href="https://www.linkedin.com/in/nabil-rizwan-b422a0250/" class="fa fa-linkedin" target="_blank";></a>
+                </div>
+            </div>
+            <div class="img">
+                <div class="name">
+                    Krishan Gupta 
+                </div>
+                <img src="/team/img/krishna.jpg" alt="Krishna">
+                <div class="dsc">
+                    Sophomore of Geology <br>& Geophysics  Department <br>
+                    <!-- <a href="https://www.facebook.com/isha.mukherjee.1023" class="fa fa-facebook"></a> -->
+
+                    <a href="https://www.linkedin.com/in/krishna-gupta-0b91ba260/" class="fa fa-linkedin" target="_blank";></a>
+                </div>
+            </div>
+            <div class="img">
+                <div class="name">
+                    Mukul Bhamboo
+                </div>
+                <img src="/team/img/mukul.jpg" alt="Mukul">
+                <div class="dsc">
+                    Sophomore of Metallurgical <br> Engineering Department <br>
+                    <!-- <a href="https://www.facebook.com/isha.mukherjee.1023" class="fa fa-facebook"></a> -->
+
+                    <a href="https://www.linkedin.com/in/mukul-bhamboo-90302625a/" class="fa fa-linkedin" target="_blank";></a>
                 </div>
             </div>
             
@@ -793,6 +817,11 @@ color: white;
                 else if (index<26) {
                     index -= 23;
                     $(this).css('margin-top', ((10+index) / 1.73205080757 * parseFloat($(this).css('width'))).toString() + 'px');
+                    $(this).css('margin-left', ((index) * parseFloat($(this).css('width'))).toString() + 'px');
+                }
+                else if (index<28) {
+                    index -= 26;
+                    $(this).css('margin-top', ((12+index) / 1.73205080757 * parseFloat($(this).css('width'))).toString() + 'px');
                     $(this).css('margin-left', ((index) * parseFloat($(this).css('width'))).toString() + 'px');
                 }
             })
