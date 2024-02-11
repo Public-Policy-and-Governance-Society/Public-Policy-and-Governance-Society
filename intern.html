@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="./intern/static/ftp/projects2023/projects.css">
+
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!--   Test comment-->
+    <!-- Meta Tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Internverse</title>
+
+    <meta name='robots' content='max-image-preview:large' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+    <link rel='stylesheet' id='wp-block-library-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-includes/css/dist/block-library/style.min.css?ver=6.3' type='text/css' media='all' />
+
+
+
+    <style id='global-styles-inline-css' type='text/css'>
+        body {
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--color--light-gray: #f5f5f5;
+            --wp--preset--color--medium-gray: #999;
+            --wp--preset--color--dark-gray: #222a36;
+            --wp--preset--color--purple: #5a00f0;
+            --wp--preset--color--dark-blue: #28375a;
+            --wp--preset--color--red: #c44d58;
+            --wp--preset--color--yellow: #ecca2e;
+            --wp--preset--color--green: #64a500;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--font-size--small: 14px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 26px;
+            --wp--preset--font-size--x-large: 42px;
+            --wp--preset--font-size--normal: 16px;
+            --wp--preset--font-size--huge: 36px;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+        }
+
+        :where(.is-layout-flex) {
+            gap: 0.5em;
+        }
+
+        :where(.is-layout-grid) {
+            gap: 0.5em;
+        }
+    </style>
+    <link rel='stylesheet' id='topapp-font-css' href='https://fonts.googleapis.com/css?family=Poppins%3A300%2C400%2C500%2C600%2C700%2C900%7CRoboto%3A100%2C300%2C400%2C500%2C700%2C900&#038;display=swap&#038;ver=6.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='galaxy-font-css' href='https://fonts.googleapis.com/css?family=Arimo%7CMontserrat%3A200%2C400%2C700%2C800&#038;ver=6.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='app-showcase-font-css' href='https://fonts.googleapis.com/css2?family=Playfair+Display%3Awght%40400%3B600%3B700&#038;ver=6.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='medical-font-css' href='https://fonts.googleapis.com/css2?family=Playfair+Display%3Aital%401&#038;display=swap&#038;ver=6.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='cloud-hosting-css' href='https://fonts.googleapis.com/css2?family=Dosis%3Awght%40400%3B600%3B700%3B800&#038;display=swap&#038;ver=6.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='contact-form-7-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8' type='text/css' media='all' />
+    <link rel='stylesheet' id='appilo-style-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/style.css?ver=6.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='appilo-bootstrap-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/bootstrap.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='app-showcase-icons-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/plugins/appilo-icons-2/style.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='appilo-flaticon-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/plugins/flaticon1/flaticon.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='appilo-icon-v3-1-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/plugins/appilo-icons-3/css/flaticon.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='appilo-icon-v4-1-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/plugins/appilo-icons-4/css/flaticon.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='appilo-icon-v3-2-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/plugins/appilo-icons-3/css/elegenticon.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='appilo-fontawesome-min-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/plugins/fontawesome-5/css/fontawesome-all.min.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='appilo-fontawesome-5-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/plugins/fontawesome-5/css/fontawesome-pro-all.v5.15.min.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='appilo-fontawesome-5-2-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/plugins/fontawesome-5/css/fontawesome-pro-v5.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='appilo-library-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/appilo-library.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='appilo-woocommerce-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/woocommerce/woocommerce.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='appilo-main-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/appilo.css?ver=6.2.2' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='saas-classic-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/saas-classic.css?ver=6.2.2' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='digital-agency-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/digital-agency.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='gym-style-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/gym-style.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='apl2-style-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/apl2-style.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='prysm-style-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/prysm.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='itsource-style-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/itsource-style.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='digital-marketing-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/digital-marketing.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='business-expert-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/business-expert.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='appilo-applanding-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/appilo-applanding.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='SEO-agency-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/seo-agency.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='appilo-resume-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/appilo-resume.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='demo-pages-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/demo-page.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='crypto-css-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/crypto.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='nft-landing-css-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/nft-landing.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='app3-landing-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/app3-landing.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='metisMenu-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/metisMenu.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='uikit-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/uikit.min.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='sass-landing-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/sass-landing.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='appilo-animate-css-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/animate.min.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='saas-app-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/saas-app.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='bigo-style-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/bigo-style.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='itsouce-2-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/themes/appilo/css/itsource-2.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='appilo_recent_posts-public-style-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/plugins/appilo-core/inc/footer-widgets/recent-posts-thumb/public.css?ver=7.0.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-icons-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.21.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-frontend-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.15.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='swiper-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/plugins/elementor/assets/lib/swiper/css/swiper.min.css?ver=5.3.6' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-post-1137-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/uploads/sites/4/elementor/css/post-1137.css?ver=1691846145' type='text/css' media='all' />
+    <link rel='stylesheet' id='appilo-elementor-frontend-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/plugins/appilo-core/assets/css/elementor-editor.css?ver=6.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-global-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/uploads/sites/4/elementor/css/global.css?ver=1691846146' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-post-40-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/uploads/sites/4/elementor/css/post-40.css?ver=1691846929' type='text/css' media='all' />
+    <link rel='stylesheet' id='msnav-main-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/plugins/mulitsite-nav/assets/style.css?ver=6.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.3'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-icons-appilo-icons-2-css' href='https://themexriver.com/appilo-theme/app-showcase/wp-content/plugins/appilo-core/assets/appilo-icons-2/style.css?ver=3.0.1' type='text/css' media='all' />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <script type='text/javascript' src='https://themexriver.com/appilo-theme/app-showcase/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
+    <script type='text/javascript' src='https://themexriver.com/appilo-theme/app-showcase/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
+    <link rel="https://api.w.org/" href="https://themexriver.com/appilo-theme/app-showcase/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://themexriver.com/appilo-theme/app-showcase/wp-json/wp/v2/pages/40" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://themexriver.com/appilo-theme/app-showcase/xmlrpc.php?rsd" />
+    <meta name="generator" content="WordPress 6.3" />
+    <link rel="canonical" href="https://themexriver.com/appilo-theme/app-showcase/" />
+    <link rel='shortlink' href='https://themexriver.com/appilo-theme/app-showcase/' />
+    <link rel="alternate" type="application/json+oembed" href="https://themexriver.com/appilo-theme/app-showcase/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthemexriver.com%2Fappilo-theme%2Fapp-showcase%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://themexriver.com/appilo-theme/app-showcase/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthemexriver.com%2Fappilo-theme%2Fapp-showcase%2F&#038;format=xml" />
+    <style>
+        #effect:after {
+            background-color: #1D3853;
+        }
+
+        #effect-icon8:before {
+            background-color: #23c686;
+        }
+
+        .card__description {
+            padding: 0 2em;
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="intern/static/ftp/projects2023/template.css">
+
+</head>
+
+<body>
+    <style>
+        @media (max-width:400px) {
+            .nav__username {
+                display: none !important;
+            }
+            .profile_img {
+                margin-left: 0px !important;
+                margin-right: 0px !important;
+            }
+            .sign-up-btn-seven a {
+                padding: 0px !important;
+            }
+        }
+    </style>
+    <header id="header-eight" class="main-header-eight " style="max-width: 100vw !important;">
+        <div class="appheader-content py-2" style="padding-top:0px !important;padding-right:0px !important;max-width: 100vw !important;box-sizing:border-box !important">
+            <div class="site-logo float-left" style="max-width: 100%;">
+                <a style="display: flex; max-width: 100%;" href="index.html">
+                    <img src="logo.png" alt="Default Logo" />
+                    <p class="ftp pl-2" style="margin: auto;  color: white; line-height: 20px;">Public Policy Internship
+                    </p>
+                </a>
+            </div>
+            <nav class="navigation-eight ul-li">
+
+                <ul id="menu-main-menu" class="">
+                    <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom no-mega-menu" style=" margin: 8px;color: #fbfcf6;"><a class="">H</a></li> -->
+                    <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom no-mega-menu" style=" margin: 8px;color: #fbfcf6;"><a href="#about" class="">About Us </a></li> -->
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom no-mega-menu" style=" margin-right: 8px;color: #fbfcf6 !important;"><a href="index.html" class="" style="color: #fbfcf6 !important;"><i class="fa fa-home"
+                                style="font-size: 18px; margin-right: 5px;" aria-hidden="true"></i>Home</a></li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom no-mega-menu" style=" margin-right: 8px;color: #fbfcf6 !important;"><a href="UPSC.html" class="" style="color: #fbfcf6 !important;"><i class="fa fa-graduation-cap"
+                                style="font-size: 18px; margin-right: 5px;" aria-hidden="true"></i>UPSC</a></li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom no-mega-menu" style=" margin-right: 8px;color: #fbfcf6 !important;"><a href="internship.html" class="" style="color: #fbfcf6 !important;"><i class="fa fa-lightbulb"
+                                style="font-size: 18px; margin-right: 5px;" aria-hidden="true"></i>Internship</a></li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom no-mega-menu" style=" margin-right: 8px;color: #fbfcf6 !important;"><a href="policy.html" class="" style="color: #fbfcf6 !important;"><i class="fa fa-book-open"
+                                style="font-size: 18px; margin-right: 5px;" aria-hidden="true"></i>Public Policy</a></li>
+                   
+                    </li>
+                </ul>
+            </nav> 
+            
+        <!-- /desktop-menu -->
+        <!-- <div class="appi-ei-mobile_menu relative-position">
+            <div class="appi-ei-mobile_menu_button appi-ei-open_mobile_menu">
+                <i class="fas fa-bars"></i>
+            </div> -->
+            <div class="appi-ei-mobile_menu_wrap">
+                <div class="mobile_menu_overlay appi-ei-open_mobile_menu"></div>
+                <div class="appi-ei-mobile_menu_content">
+                    <div class="appi-ei-mobile_menu_close appi-ei-open_mobile_menu">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+                    <div class="m-brand-logo text-center">
+                        <img src="/logo.png" alt="Default Logo" style="height: 50px;" />
+                    </div>
+                </div>
+            </div>
+            <!-- /mobile-menu -->
+    </header>
+
+  
+           
+    </div>
+    <div class="curr__projects">
+        <div >
+            <!-- <a class="req__btn projects__btn" data-bs-toggle="modal" data-bs-target="#reqModal" style="color: white;">Request a Project</a> -->
+            <h3 style="text-align: center; font-size: 3em; color: #333;">INTERNSHIP</h3>
+            <!-- <a class="viewsApplicationsBtn projects__btn" href="/ftp/applications/">Go to applied Projects <i class="fas fa-arrow-right" style="padding-left: 5px"></i></a> -->
+        </div>
+        <!-- <hr style="border: none;outline: none;height: 2px;max-width: 1000px; width: calc(100vw - 10px);background-color: #d5d5d5; margin-top: 10px;margin-bottom: 20px; margin-left: auto; margin-right: auto;"> -->
+        <ul class="cards" style="padding-left: 0px;margin-right:10px;margin-left:10px;">
+
+            <li style="min-width: 280px;">
+                <div class="card">
+                    <img src="https://chemicals.gov.in/sites/default/files/useful_logos/invset_India.png" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header pb-0">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" /></svg>
+                            <div class="card__header-text">
+                                <h3 class="card__title">Projects related to investment and economic development</h3>
+                                <h5 class="card__title_1">Invest India</h5>
+                                <span class="card__status" style="color: #878787">Project Mode: On-site</span><br>
+                                <span class="card__status" style="color: #ff4747">Deadline: Available all time</span>
+                            </div>
+                        </div>
+                        <p class="card__description">The Invest India internship is a prestigious opportunity for young, passionate individuals to gain valuable experience in India's investment promotion and facilitation agency. It's a fast-paced environment where you'll directly contribute to attracting foreign investment and ...</p>
+                        <div class="buttons px-2 pb-3" style="position: absolute;/* flex: 1; */bottom: 0px;/* bottom:28px; */width: 100%; ">
+                            <!-- <a class="read_more px-3 py-2" href="/" target="_blank">Read More</a> -->
+                            <a class="read_more px-3 py-2" href="https://www.investindia.gov.in/careers" target="_blank">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
+            <li style="min-width: 280px;">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ODr0KqddT8CQKWrnhQ1ZEJHFPy5rbcPh2haa1tTAwK9-0Rvb__nQp7eQP8fStMZh8f0&usqp=CAU" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header pb-0">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" /></svg>
+                            <div class="card__header-text">
+                                <h3 class="card__title">Empowering future policy leaders through hands-on experience</h3>
+                                <h5 class="card__title_1">Centre for Public Policy and Research.</h5>
+                                <span class="card__status" style="color: #878787">Project Mode: On-site</span><br>
+                                <span class="card__status" style="color: #ff4747">Deadline: Available all time</span>
+                            </div>
+                        </div>
+                        <p class="card__description">The Centre for Public Policy Research (CPPR) is an independent public policy organisation dedicated to in-depth research and scientific analysis with the objective of delivering actionable ideas that could transform society. Based out of Kochi, in the Indian state of Kerala ...</p>
+                        <div class="buttons px-2 pb-3" style="position: absolute;/* flex: 1; */bottom: 0px;/* bottom:28px; */width: 100%;justify-content: space-between;">
+                            <a class="read_more px-3 py-2" href="intern/Details/cppr.html" target="_blank">Read More</a>
+                            <a class="read_more px-3 py-2" href="https://docs.google.com/forms/d/e/1FAIpQLScmEEw-7JUwwc1iG_1qayXSwMwrG4hani0UxQS2Ygh1mGrG9Q/viewform?edit_requested=true" target="_blank">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li style="min-width: 280px;">
+                <div class="card">
+                    <img src="https://www.livelaw.in/cms/wp-content/uploads/2014/02/PRS-LL-SIze.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header pb-0">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" /></svg>
+                            <div class="card__header-text">
+                                <h3 class="card__title">Research interns, Data Interns & Design Interns</h3>
+                                <h5 class="card__title_1">PRS legislative research</h5>
+                                <span class="card__status" style="color: #878787">Project Mode: On-SITE</span><br>
+                                <span class="card__status" style="color: #ff4747">Deadline: Available All time</span>
+                            </div>
+                        </div>
+                        <p class="card__description">PRS is a leading research group with the mission to strengthen India’s democracy by helping Parliament and state assemblies be more effective.  These institutions ...</p>
+                        <div class="buttons px-2 pb-3" style="position: absolute;/* flex: 1; */bottom: 0px;/* bottom:28px; */width: 100%;">
+                            <!-- <a class="read_more px-3 py-2" href="Details/cppr.html" target="_blank">Read More</a> -->
+                            <a class="read_more px-3 py-2" href="https://docs.google.com/forms/d/e/1FAIpQLSd48lpfVAB1t71fsKIaqRjFkVLeLyaWzQzpLWEY9_r3qQb6kw/viewform" target="_blank">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
+            <li style="min-width: 280px;">
+                <div class="card">
+                    <img src="https://governancenow.com/temp/yojna_bhawan.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header pb-0">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z"/></svg>
+                            <div class="card__header-text">
+                                <h3 class="card__title">Work type will depend on work sector</h3>
+                                <h5 class="card__title_1">NITI AAYOG</h5>
+                                <span class="card__status" style="color: #878787">Project Mode: Remote/On-site</span><br>
+                                <span class="card__status" style="color: #ff4747">Available: 1-10th of every month </span>
+                            </div>
+                        </div>
+                        <p class="card__description">NITI Aayog offers internships in 20+ different streams throughout the year such as Human Resource Development, Economics etc.
+                            Interested students can apply in the first week of every month for the internship in a field they're interested in.</p>
+                        <div class="buttons px-2 pb-3" style="position: absolute;/* flex: 1; */bottom: 0px;/* bottom:28px; */width: 100%;justify-content: space-between;">
+                            <a class="read_more px-3 py-2" href="https://workforindia.niti.gov.in/intern/PDF/GENERAL%20INFORMATION_INTERNSHIP%20NITI%20SCHEME.pdf" target="_blank">Read More</a>
+                            <a class="read_more px-3 py-2" href="https://workforindia.niti.gov.in/intern/InternshipEntry/PCInternshipEntry.aspx" target="_blank">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+                   
+            <li style="min-width: 280px;">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjHpZzS2D_AEezt2AUGmvtbEeKG_PHQpS705YAlt8aCTfPxDPIeUVONxG6q1yiKYo0C34&usqp=CAU" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header pb-0">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z"/></svg>
+                            <div class="card__header-text">
+                                <h3 class="card__title">Research Type Work</h3>
+                                <h5 class="card__title_1">Solar Energy Corporation of India Limited</h5>
+                                <span class="card__status" style="color: #878787">Project Mode: Remote/On-site</span><br>
+                                <span class="card__status" style="color: #ff4747">Available: 1-10th of every month </span>
+                            </div>
+                        </div>
+                        <p class="card__description">Step into the renewable future with the SECI Internship. This program offers students a chance to work on cutting-edge projects in Renewable Energy and Engineering, providing invaluable industry experience.</p>
+                        <div class="buttons px-2 pb-3" style="position: absolute;/* flex: 1; */bottom: 0px;/* bottom:28px; */width: 100%;justify-content: space-between;">
+                            <a class="read_more px-3 py-2" href="https://www.seci.co.in/upload/static/files/SECI%20internship%20Policy.pdf" target="_blank">Read More</a>
+                            <a class="read_more px-3 py-2" href="https://www.seci.co.in/register/intership-form" target="_blank">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li style="min-width: 280px;">
+                <div class="card">
+                    <img src="https://bl-i.thgim.com/public/news/aeadpz/article66865080.ece/alternates/FREE_1200/cci.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header pb-0">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z"/></svg>
+                            <div class="card__header-text">
+                                <h3 class="card__title">Policy Making</h3>
+                                <h5 class="card__title_1">Competition Commission Internship program</h5>
+                                <span class="card__status" style="color: #878787">Project Mode: Remote/On-site</span><br>
+                                <span class="card__status" style="color: #ff4747">Deadline: Application should reach by 1st of preceding month</span>
+                            </div>
+                        </div>
+                        <p class="card__description"><br>. The program is open to students of Economics, Law, Management, and Finance, and it attracts talents from the best Indian educational institutions located across the country.</p>
+                        <div class="buttons px-2 pb-3" style="position: absolute;/* flex: 1; */bottom: 0px;/* bottom:28px; */width: 100%;justify-content: space-between;">
+                            <a class="read_more px-3 py-2" href="https://icmai.in/upload/Institute/Updates_Archives/CCI_Interns.pdf" target="_blank">Read More</a>
+                            <a class="read_more px-3 py-2" href="https://www.cci.gov.in/internship/form" target="_blank">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
+
+            <li style="min-width: 280px;">
+                <div class="card">
+                    <img src="https://cdn.sanity.io/images/6u5teakk/production/90f8d8b8c6d8bb7606acda98ccca8fe13c3c7d4d-396x330.jpg?w=600" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header pb-0">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z"/></svg>
+                            <div class="card__header-text">
+                                <h3 class="card__title">Coordination, Advocacy and Policy </h3>
+                                <h5 class="card__title_1">Society For Promotion of Youth and Masses</h5>
+                                <span class="card__status" style="color: #878787">Project Mode: Remote/On-site</span><br>
+                                <span class="card__status" style="color: #ff4747">Available: Always </span>
+                            </div>
+                        </div>
+                        <p class="card__description">SPYM works at the state and national levels and is focused on the following domains:
+
+                            Prevention of Drug use and rehabilitation of children and youth dependant on drugs
+                            Healthcare (Reproductive & sexual health, HIV/AIDS, etc.)
+                            Intervention with street children on life-skills & education
+                            Community Development
+                            Training & Research..</p>
+                        <div class="buttons px-2 pb-3" style="position: absolute;/* flex: 1; */bottom: 0px;/* bottom:28px; */width: 100%;">
+                            <!-- <a class="read_more px-3 py-2" href="https://workforindia.niti.gov.in/intern/PDF/GENERAL%20INFORMATION_INTERNSHIP%20NITI%20SCHEME.pdf" target="_blank">Read More</a> -->
+                            <a class="read_more px-3 py-2" href="https://docs.google.com/forms/d/e/1FAIpQLSdabV8wNhkZJRQEdXxmIsfRIBkC9GEQDlxj35UxxbhrTe-Zhg/viewform" target="_blank">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </li> 
+            
+            <li style="min-width: 280px;">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPoHrW8ZglmtmQvLUNg6z4VkyZ582W4gETDL8CPGrzh1yHh394e7KXJlyy1gdce0qM1JU&usqp=CAU" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header pb-0">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z"/></svg>
+                            <div class="card__header-text">
+                                <h3 class="card__title">Coordination and Policy </h3>
+                                <h5 class="card__title_1">Foundation of Healthcare Technology Society</h5>
+                                <span class="card__status" style="color: #878787">Project Mode: Remote</span><br>
+                                <span class="card__status" style="color: #ff4747">Available: Always</span>
+                            </div>
+                        </div>
+                        <p class="card__description">Foundation of Healthcare Technologies Society (FHTS) formed in 2012 is a nationally registered, research based organization, designing, developing, implementing and evaluating human centred technological interventions and innovations for an overall improvement of population health and well-being across diverse settings</p>
+                        <div class="buttons px-2 pb-3" style="position: absolute;/* flex: 1; */bottom: 0px;/* bottom:28px; */width: 100%;">
+                            <!-- <a class="read_more px-3 py-2" href="https://workforindia.niti.gov.in/intern/PDF/GENERAL%20INFORMATION_INTERNSHIP%20NITI%20SCHEME.pdf" target="_blank">Read More</a> -->
+                            <a class="read_more px-3 py-2" href="https://fhts.ac.in/apply-online/" target="_blank">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </li> 
+            <li style="min-width: 280px;">
+                <div class="card">
+                    <img src="https://farm4.staticflickr.com/3404/3588817140_9aec17ee8f.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header pb-0">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z"/></svg>
+                            <div class="card__header-text">
+                                <h3 class="card__title">International Dialogue Programming Internship</h3>
+                                <h5 class="card__title_1">George Washington Carver Internship</h5>
+                                <span class="card__status" style="color: #878787">Project Mode: Remote</span><br>
+                                <span class="card__status" style="color: #ff4747">Deadline: 29 Feb</span>
+                            </div>
+                        </div>
+                        <p class="card__description">George Washington Carver (GWC) Internship provides students with an opportunity to support the work of the World Food Prize Foundation and learn about issues related to global food insecurity, sustainability, and international development. GWC Interns come from a variety of academic disciplines and internship roles will be specialized according to an individual’s background, skills, and area of interest.  .</p>
+                        <div class="buttons px-2 pb-3" style="position: absolute;/* flex: 1; */bottom: 0px;/* bottom:28px; */width: 100%;justify-content: space-between;">
+                            <a class="read_more px-3 py-2" href="https://www.worldfoodprize.org/en/learn_and_act/george_washington_carver_internship/" target="_blank">Read More</a>
+                            <a class="read_more px-3 py-2" href="https://docs.google.com/forms/d/e/1FAIpQLSdLgWKT0BAb25AFmGMvNce60JtsajMZI5BacIXMhtSGRb6I9Q/viewform" target="_blank">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li style="min-width: 280px;">
+                <div class="card">
+                    <img src="https://farm4.staticflickr.com/3404/3588817140_9aec17ee8f.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header pb-0">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z"/></svg>
+                            <div class="card__header-text">
+                                <h3 class="card__title">Public Relations Internship</h3>
+                                <h5 class="card__title_1">George Washington Carver Internship</h5>
+                                <span class="card__status" style="color: #878787">Project Mode: Remote</span><br>
+                                <span class="card__status" style="color: #ff4747">Deadline: 29 Feb</span>
+                            </div>
+                        </div>
+                        <p class="card__description"> George Washington Carver (GWC) Internship provides students with an opportunity to support the work of the World Food Prize Foundation and learn about issues related to global food insecurity, sustainability, and international development. GWC Interns come from a variety of academic disciplines and internship roles will be specialized according to an individual’s background, skills, and area of interest.  .</p>
+                        <div class="buttons px-2 pb-3" style="position: absolute;/* flex: 1; */bottom: 0px;/* bottom:28px; */width: 100%;justify-content: space-between;">
+                            <a class="read_more px-3 py-2" href="https://www.worldfoodprize.org/en/learn_and_act/george_washington_carver_internship/" target="_blank">Read More</a>
+                            <a class="read_more px-3 py-2" href="https://docs.google.com/forms/d/e/1FAIpQLSdDwIESAFclrDQA51p1MujUNIOn32fZBmUCvr_CRrrWuAnoyQ/viewform" target="_blank">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li style="min-width: 280px;">
+                <div class="card">
+                    <img src="https://www.worldendeavors.com/wp-content/uploads/2023/08/WorldEndeavorsLogo_JPG_Horizontal.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header pb-0">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z"/></svg>
+                            <div class="card__header-text">
+                                <h3 class="card__title">Policy and Government Internships</h3>
+                                <h5 class="card__title_1">World Endeavours</h5>
+                                <span class="card__status" style="color: #878787">Project Mode: Remote</span><br>
+                                <span class="card__status" style="color: #ff4747">Deadline: 29 Feb</span>
+                            </div>
+                        </div>
+                        <p class="card__description"> Policy and government internships abroad offer a unique and enlightening experience for individuals interested in understanding and influencing international political landscapes and governance structures. These internships provide.. .</p>
+                        <div class="buttons px-2 pb-3" style="position: absolute;/* flex: 1; */bottom: 0px;/* bottom:28px; */width: 100%;justify-content: space-between;">
+                            <a class="read_more px-3 py-2" href="https://www.worldendeavors.com/intern-abroad/policy-government/#all-internships" target="_blank">Read More</a>
+                            <a class="read_more px-3 py-2" href="https://www.worldendeavors.com/apply/" target="_blank">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+
+
+    <section id="footer" class="ei-footer-section position-relative" style="padding: 15px;" >
+        <div class="container">
+            <div class="row" style="display: flex !important; justify-content: space-between !important;">
+                <div id="aboutwidget_widget-1" class="col-lg-4 widget_aboutwidget_widget">
+                    <div class="ei-footer-widget pera-content appeight-headline ul-li-block">
+                        <div class="ei-footer-logo">
+                            <!-- <img src="../Policy/images/iitlog.png" alt="Default Logo" style="height: 50px;margin-right: 10px;" /> -->
+                            <img src="logo.png" alt="Default Logo" style="height: 60px;" />
+                        </div>
+                        <p style="max-width: 100% !important;">
+                            Public Policy and Governance Society, IIT Kharagpur serves as a dynamic platform for impassioned students to rigorously examine, deliberate upon, and actively engage with current public Policy and governance issues. Encouraging critical thinking and fostering innovative ideation, we foster collaborative efforts among students.
+                        </p>
+                        <div class="ei-payment-mathod">
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <style>
+                </style>
+
+
+
+                <div id="nav_menu-1" class="col-lg-4 widget_nav_menu" style="padding-left: 100px;">
+                    <div class="ei-footer-widget pera-content appeight-headline ul-li-block">
+                        <h3 class="ei-widget-title">Our Initatives</h3>
+                        <div class="menu-footer-menu-container">
+                            <ul id="menu-footer-menu" class="menu">
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom no-mega-menu" style="width: 100% !important;"><a href="../insight.html" class="">Insight Ignite</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom no-mega-menu" style="width: 100% !important;"><a href="../mentorship.html" class="">Mentorship</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom no-mega-menu" style="width: 100% !important;"><a href="#" class="">DDS</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom no-mega-menu" style="width: 100% !important;"><a href="#" class="">GAP</a></li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div id="appshowcaseaddresswi_widget-1" class="col-lg-4 widget_appshowcaseaddresswi_widget">
+                    <h3>Subscribe to our Newsletter</h3>
+                    <form>
+                        <div style="display: flex;" class="subscribe_newsletter">
+                            <div class="form-group row">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label-lg">Email</label> -->
+
+                                <!-- <div class="col-md-10" class="email_input">
+                                    <form action="https://script.google.com/macros/s/AKfycby_pjIf6fBBuqPosOCQoOOPqsX1Lvdxwnyrx6BbimuPVRiSRXtaYrO5bUEZV61yVbar/exec">
+                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email" style="width: 15rem;margin-right: 5px;">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+
+                                <div class="form-group row">
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-primary subscribe" style="margin-left: 15px;">Subscribe</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </form>
+
+
+
+
+
+                    </div> -->
+                </div>
+            </div>
+            <div class="ei-footer-copyright">
+                <div class="container">
+                    <div class="ei-footer-copyright-content">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="ei-copyright-text">
+                                    <!-- <p>
+                                        © 2024 <a href="#">TECH TEAM PPGS</a> </p> -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="ei-footer-shape3 position-absolute"><img src="https://themexriver.com/appilo-theme/app-showcase/wp-content/uploads/sites/4/2020/11/eimap-1.png" alt></div> -->
+    </section>
+    <script src="./intern/static/home/js/jquery.min.js"></script>
+    
+    <script src="./intern/static/home/js/jquery-migrate-3.0.1.min.js%2Bpopper.min.js%2Bbootstrap.min.js.pagespeed.jc.JHZ20Zp0_b.js"></script>
+
+    <script src="./intern/static/home/js/jquery.easing.1.3.js%2Bjquery.waypoints.min.js%2Bjquery.stellar.min.js%2Bowl.carousel.min.js.pagespeed.jc.jxBPC5Ttgn.js"></script>
+
+    <script src="./intern/static/home/js/jquery.magnific-popup.min.js%2Bjquery.animateNumber.min.js%2Bscrollax.min.js%2Bgoogle-map.js%2Bmain.js.pagespeed.jc.zPAUCnbQR0.js"></script>
+
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"71268590bf329398","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.12.0","si":100}'
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="./intern/static/home/js/slick/slick.min.js"></script>
+    <script src="./intern/static/home/js/lg/lightgallery.min.js">
+    </script>
+    <script src="./intern/static/home/js/lg/lg-thumbnail.umd.js">
+    </script>
+    <script src="./intern/static/home/js/lg/lg-video.umd.js">
+    </script>
+</body>
+
+<script src="./intern/static/home/js/contact.js"></script>
+<script src="./intern/static/home/js/gallery.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="./intern/static/ftp/ProjectsPage/js/main2.js"></script>
+
+
+
+</body>
+
+</html>
