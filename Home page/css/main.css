@@ -1596,22 +1596,22 @@ header .header-logo a {
 
 #menu-nav-wrap .nav-list li {
   padding-left: 0;
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.03);
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
   line-height: 4.2rem;
 }
 
 #menu-nav-wrap .nav-list li:first-child {
-  border-top: 1px dotted rgba(255, 255, 255, 0.03);
+  border-top: 1px dotted rgba(255, 255, 255, 0.5);
 }
 
 #menu-nav-wrap .nav-list li a {
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255,255);
   display: block;
 }
 
 #menu-nav-wrap .nav-list li a:hover,
 #menu-nav-wrap .nav-list li a:focus {
-  color: white;
+  color: #f9a828;
 }
 
 #menu-nav-wrap .header-social-list {
@@ -1628,12 +1628,12 @@ header .header-logo a {
 }
 
 #menu-nav-wrap .header-social-list li a {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255);
 }
 
 #menu-nav-wrap .header-social-list li a:hover,
 #menu-nav-wrap .header-social-list li a:focus {
-  color: white;
+  color: #f9a828;
 }
 
 #menu-nav-wrap .header-social-list li:last-child {
