@@ -30,6 +30,18 @@
         transform: translateY(-10px);
       }
     </style>
+    <style>
+      #contentDropdown:hover{
+         cursor: pointer;
+      }
+      .content-item {
+        display: none;
+    }
+    
+    .content-item.active {
+        display: block;
+    }
+    </style>
 
 </head>
 
@@ -523,64 +535,196 @@
 
         <!-- Edge Delegates Section  -->
         <section class="Delegates" style="padding-top: 0" id="Achievers">
-            <h2 class=" heading-in-mobile">Our Achievers 2023</h2>
+            <h2 class=" heading-in-mobile">Our Achievers <select id="contentDropdown" style="font-size: 40px;
+              font-weight: 800; border-radius: 10px;">
+              <option value="default" style="font-size: 20px;
+              text-align: center;
+              font-weight: 600;
+          ">2023</option>
+              <option value="option1" style="font-size: 20px;
+              text-align: center;
+              font-weight: 600;
+          ">2024</option>
+            </select></h2>
             <div class="underline"></div>
-            <div class="container">
-                <div class="row">
+            <div id="content-alumni">
+              <div id="defaultContent" class="content-item active">
+                <div class="container">
+                  <div class="row">
+                      <div class="col">
+                          <div class="photo"><img src="UPSC/img/nationals/Untitled design.png" alt="" /></div>
+                          <br />
+                          <div class="card_content">
+                            <h2><b>Sandeep Kumar</b></h2>
+                            <Strong><h2><i>AIR 24</i></h2></Strong>
+                            <p>Mathematics and Computing '19</p>                                 
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="photo"><img src="https://media.licdn.com/dms/image/C4E03AQEHuJ31I6Bdcw/profile-displayphoto-shrink_400_400/0/1593936373184?e=1707350400&v=beta&t=r6Xtjf2i1mo5x9FImQ1g60AJBdIBhIdRPb6y11gUJ1c" alt="" /></div>
+                          <br />
+                          <div class="card_content">
+                            <h2><b>Pourush Sood</b></h2>
+                            <Strong><h2><i>AIR 29</i></h2></Strong>
+                            <p>Electronics and Electrical Engineering '20</p>                                 
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="photo"><img src="data:image/jpeg;base64,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" alt="" /></div>
+                          <br />
+                          <div class="card_content">
+                            <h2><b>Utkarsh Kumar</b></h2>
+                            <Strong><h2><i>AIR 78</i></h2></Strong>
+                            <p>Instrumentation Engineering '14</p>                                 
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col">
+                          <div class="photo"><img src="https://media.licdn.com/dms/image/C4E03AQEP5Og9ACb73A/profile-displayphoto-shrink_400_400/0/1549475694245?e=1707350400&v=beta&t=hSOu5Nq9LOCT64XhmHchTGpv3mRj4_HvmGvQ8utpJI8" alt="" /></div>
+                          <br />
+                          <div class="card_content">
+                            <h2><b>Mayank Madhav</b></h2>
+                            <Strong><h2><i>AIR 119</i></h2></Strong>
+                            <p>Civil Engineering '20</p>                                 
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="photo"><img src="https://media.licdn.com/dms/image/C5603AQFfI8giWA3nnw/profile-displayphoto-shrink_400_400/0/1630336537891?e=1707350400&v=beta&t=O1gxUhW0v0JdcvbBbbA_fPBN1BTQOq_rxb8eg3zp4-U" alt="" /></div>
+                          <br />
+                          <div class="card_content">
+                            <h2><b>Harsh Parashar</b></h2>
+                            <Strong><h2><i>AIR 143</i></h2></Strong>
+                            <p>Electronics and Electrical Engineering '17</p>                                 
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="photo"><img src="https://media.licdn.com/dms/image/C4E03AQENopk2iGD5qg/profile-displayphoto-shrink_400_400/0/1517492128155?e=1707350400&v=beta&t=5DyF0BPo9nhCiTKXUmuqqW3aurUZoYTI10IJsYAiohE" alt="" /></div>
+                          <br />
+                          <div class="card_content">
+                            <h2><b>Shivam Kumar</b></h2>
+                            <Strong><h2><i>AIR 309</i></h2></Strong>
+                            <p>Mechanical Engineering '19</p>                                 
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
                     <div class="col">
-                        <div class="photo"><img src="UPSC/img/nationals/Untitled design.png" alt="" /></div>
+                        <div class="photo"><img src="/UPSC/img/nationals/bhuvana pranith pappula.png" alt="" /></div>
                         <br />
                         <div class="card_content">
-                          <h2><b>Sandeep Kumar</b></h2>
-                          <Strong><h2><i>AIR 24</i></h2></Strong>
-                          <p>Mathematics and Computing '19</p>                                 
+                          <h2><b>Bhuvana Pranith Pappula</b></h2>
+                          <Strong><h2><i>AIR 510</i></h2></Strong>
+                          <p>Mining Engineering '17</p>                                 
                         </div>
                     </div>
                     <div class="col">
-                        <div class="photo"><img src="https://media.licdn.com/dms/image/C4E03AQEHuJ31I6Bdcw/profile-displayphoto-shrink_400_400/0/1593936373184?e=1707350400&v=beta&t=r6Xtjf2i1mo5x9FImQ1g60AJBdIBhIdRPb6y11gUJ1c" alt="" /></div>
+                        <div class="photo"><img src="https://media.licdn.com/dms/image/D5603AQF0PIFdSWMK8Q/profile-displayphoto-shrink_400_400/0/1700213186635?e=1707350400&v=beta&t=dX54-xyRCVfFTtPxllmFpYOkOQrCLKbxFZiyS9cn1wo" alt="" /></div>
                         <br />
                         <div class="card_content">
-                          <h2><b>Pourush Sood</b></h2>
-                          <Strong><h2><i>AIR 29</i></h2></Strong>
-                          <p>Electronics and Electrical Engineering '20</p>                                 
+                          <h2><b>Rahul Ramesh Atram</b></h2>
+                          <Strong><h2><i>AIR 663</i></h2></Strong>
+                          <p>Electrical Engineering '21</p>                                 
                         </div>
                     </div>
                     <div class="col">
-                        <div class="photo"><img src="data:image/jpeg;base64,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" alt="" /></div>
+                        <div class="photo"><img src="https://media.licdn.com/dms/image/C5103AQHk2ZSLzCf5xA/profile-displayphoto-shrink_400_400/0/1558973096885?e=1707350400&v=beta&t=YgF1b-h27iEo0TZWesLEwJN1VSVTTR_ywvDknjXWPcs" alt="" /></div>
                         <br />
                         <div class="card_content">
-                          <h2><b>Utkarsh Kumar</b></h2>
-                          <Strong><h2><i>AIR 78</i></h2></Strong>
-                          <p>Instrumentation Engineering '14</p>                                 
+                          <h2><b>Anju Joon</b></h2>
+                          <Strong><h2><i>AIR 701</i></h2></Strong>
+                          <p>Economics '21</p>                                 
                         </div>
                     </div>
                 </div>
-                <div class="row">
+              </div>
+              </div>
+              <div id="option1Content" class="content-item">
+                <div class="container">
+                  <!-- <div class="row">
+                      <div class="col">
+                          <div class="photo"><img src="https://iasexamportal.com/sites/default/files/smart-work-to-clear-upsc-ashish-kumar-strategy-air-53-img-2.jpg" alt="" /></div>
+                          <br />
+                          <div class="card_content">
+                            <h2><b>Ashish Kumar</b></h2>
+                            <Strong><h2><i>AIR 8</i></h2></Strong>
+                            <p>Mechanical Engineering'17</p>                                 
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="photo"><img src="https://media.licdn.com/dms/image/C4E03AQEHuJ31I6Bdcw/profile-displayphoto-shrink_400_400/0/1593936373184?e=1707350400&v=beta&t=r6Xtjf2i1mo5x9FImQ1g60AJBdIBhIdRPb6y11gUJ1c" alt="" /></div>
+                          <br />
+                          <div class="card_content">
+                            <h2><b>Shivam Kumar</b></h2>
+                            <Strong><h2><i>AIR 19</i></h2></Strong>
+                            <p>Mechanical Engineering'17</p>                                 
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="photo"><img src="data:image/jpeg;base64,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" alt="" /></div>
+                          <br />
+                          <div class="card_content">
+                            <h2><b>Mohan Lal</b></h2>
+                            <Strong><h2><i>AIR 53</i></h2></Strong>
+                            <p>Chemistry'20</p>                                 
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col">
+                          <div class="photo"><img src="https://media.licdn.com/dms/image/C4E03AQEP5Og9ACb73A/profile-displayphoto-shrink_400_400/0/1549475694245?e=1707350400&v=beta&t=hSOu5Nq9LOCT64XhmHchTGpv3mRj4_HvmGvQ8utpJI8" alt="" /></div>
+                          <br />
+                          <div class="card_content">
+                            <h2><b>Akshay Doshi</b></h2>
+                            <Strong><h2><i>AIR 75</i></h2></Strong>
+                            <p>Chemistry'16</p>                                 
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="photo"><img src="https://media.licdn.com/dms/image/C5603AQFfI8giWA3nnw/profile-displayphoto-shrink_400_400/0/1630336537891?e=1707350400&v=beta&t=O1gxUhW0v0JdcvbBbbA_fPBN1BTQOq_rxb8eg3zp4-U" alt="" /></div>
+                          <br />
+                          <div class="card_content">
+                            <h2><b>Abhay Rajendra Daga</b></h2>
+                            <Strong><h2><i>AIR 185</i></h2></Strong>
+                            <p>Computer Science and Engineering'18</p>                                 
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="photo"><img src="https://media.licdn.com/dms/image/C4E03AQENopk2iGD5qg/profile-displayphoto-shrink_400_400/0/1517492128155?e=1707350400&v=beta&t=5DyF0BPo9nhCiTKXUmuqqW3aurUZoYTI10IJsYAiohE" alt="" /></div>
+                          <br />
+                          <div class="card_content">
+                            <h2><b>G Akshay Deepak</b></h2>
+                            <Strong><h2><i>AIR 196</i></h2></Strong>
+                            <p>Ocean Engineering and Naval Architecture'16</p>                                 
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
                     <div class="col">
-                        <div class="photo"><img src="https://media.licdn.com/dms/image/C4E03AQEP5Og9ACb73A/profile-displayphoto-shrink_400_400/0/1549475694245?e=1707350400&v=beta&t=hSOu5Nq9LOCT64XhmHchTGpv3mRj4_HvmGvQ8utpJI8" alt="" /></div>
+                        <div class="photo"><img src="/UPSC/img/nationals/bhuvana pranith pappula.png" alt="" /></div>
                         <br />
                         <div class="card_content">
-                          <h2><b>Mayank Madhav</b></h2>
-                          <Strong><h2><i>AIR 119</i></h2></Strong>
-                          <p>Civil Engineering '20</p>                                 
+                          <h2><b>Marripati Naga Bharath</b></h2>
+                          <Strong><h2><i>AIR 580</i></h2></Strong>
+                          <p>Electronics and Electrical Communication Engineering'16</p>                                 
                         </div>
                     </div>
                     <div class="col">
-                        <div class="photo"><img src="https://media.licdn.com/dms/image/C5603AQFfI8giWA3nnw/profile-displayphoto-shrink_400_400/0/1630336537891?e=1707350400&v=beta&t=O1gxUhW0v0JdcvbBbbA_fPBN1BTQOq_rxb8eg3zp4-U" alt="" /></div>
+                        <div class="photo"><img src="https://media.licdn.com/dms/image/D5603AQF0PIFdSWMK8Q/profile-displayphoto-shrink_400_400/0/1700213186635?e=1707350400&v=beta&t=dX54-xyRCVfFTtPxllmFpYOkOQrCLKbxFZiyS9cn1wo" alt="" /></div>
                         <br />
                         <div class="card_content">
-                          <h2><b>Harsh Parashar</b></h2>
-                          <Strong><h2><i>AIR 143</i></h2></Strong>
-                          <p>Electronics and Electrical Engineering '17</p>                                 
+                          <h2><b>Sumit Kumar Dhotre</b></h2>
+                          <Strong><h2><i>AIR 750</i></h2></Strong>
+                          <p>Electrical Engineering'18</p>                                 
                         </div>
                     </div>
                     <div class="col">
-                        <div class="photo"><img src="https://media.licdn.com/dms/image/C4E03AQENopk2iGD5qg/profile-displayphoto-shrink_400_400/0/1517492128155?e=1707350400&v=beta&t=5DyF0BPo9nhCiTKXUmuqqW3aurUZoYTI10IJsYAiohE" alt="" /></div>
+                        <div class="photo"><img src="https://media.licdn.com/dms/image/C5103AQHk2ZSLzCf5xA/profile-displayphoto-shrink_400_400/0/1558973096885?e=1707350400&v=beta&t=YgF1b-h27iEo0TZWesLEwJN1VSVTTR_ywvDknjXWPcs" alt="" /></div>
                         <br />
                         <div class="card_content">
-                          <h2><b>Shivam Kumar</b></h2>
-                          <Strong><h2><i>AIR 309</i></h2></Strong>
-                          <p>Mechanical Engineering '19</p>                                 
+                          <h2><b>Pranjali Khandekar</b></h2>
+                          <Strong><h2><i>AIR 761</i></h2></Strong>
+                          <p>Electronics and Electrical Communication Engineering'20</p>                                 
                         </div>
                     </div>
                 </div>
@@ -589,29 +733,13 @@
                       <div class="photo"><img src="/UPSC/img/nationals/bhuvana pranith pappula.png" alt="" /></div>
                       <br />
                       <div class="card_content">
-                        <h2><b>Bhuvana Pranith Pappula</b></h2>
-                        <Strong><h2><i>AIR 510</i></h2></Strong>
-                        <p>Mining Engineering '17</p>                                 
+                        <h2><b>Sanjay Yadav</b></h2>
+                        <Strong><h2><i>AIR 811</i></h2></Strong>
+                        <p>Chemistry'17</p>                                 
                       </div>
                   </div>
-                  <div class="col">
-                      <div class="photo"><img src="https://media.licdn.com/dms/image/D5603AQF0PIFdSWMK8Q/profile-displayphoto-shrink_400_400/0/1700213186635?e=1707350400&v=beta&t=dX54-xyRCVfFTtPxllmFpYOkOQrCLKbxFZiyS9cn1wo" alt="" /></div>
-                      <br />
-                      <div class="card_content">
-                        <h2><b>Rahul Ramesh Atram</b></h2>
-                        <Strong><h2><i>AIR 663</i></h2></Strong>
-                        <p>Electrical Engineering '21</p>                                 
-                      </div>
-                  </div>
-                  <div class="col">
-                      <div class="photo"><img src="https://media.licdn.com/dms/image/C5103AQHk2ZSLzCf5xA/profile-displayphoto-shrink_400_400/0/1558973096885?e=1707350400&v=beta&t=YgF1b-h27iEo0TZWesLEwJN1VSVTTR_ywvDknjXWPcs" alt="" /></div>
-                      <br />
-                      <div class="card_content">
-                        <h2><b>Anju Joon</b></h2>
-                        <Strong><h2><i>AIR 701</i></h2></Strong>
-                        <p>Economics '21</p>                                 
-                      </div>
-                  </div>
+              </div> -->
+              </div>
               </div>
             </div>
         </section>
@@ -1290,6 +1418,24 @@ SC/ST: 32 years + 5 years; Unlimited attempts.
                 Copyright @ 2024 All right reserved Tech Team| Made with Love
             </p>
         </footer>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', (event) => {
+            const dropdown = document.getElementById('contentDropdown');
+            const contentItems = document.querySelectorAll('.content-item');
+        
+            dropdown.addEventListener('change', (event) => {
+                contentItems.forEach(item => item.classList.remove('active'));
+                
+                const selectedValue = event.target.value;
+                const selectedContent = document.getElementById(`${selectedValue}Content`);
+                
+                if (selectedContent) {
+                    selectedContent.classList.add('active');
+                }
+            });
+        });
+        </script>
 
         <script src="UPSC/JS/resp.js"></script>
         <script src="UPSC/JS/timeline.js"></script>
