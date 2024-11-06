@@ -224,28 +224,33 @@ th {
 }
 
 .w-icon-slider-right:before {
-    content: "î˜€";
+    content: "";
 }
 
 .w-icon-slider-left:before {
-    content: "î˜";
+    content: "";
 }
 
 .w-icon-nav-menu:before {
-    content: "î˜‚";
+    content: "";
+}
+
+.w-icon-nav-menu.active:before {
+    content: "X";
+    padding-inline: 2.67px;
 }
 
 .w-icon-arrow-down:before,
 .w-icon-dropdown-toggle:before {
-    content: "î˜ƒ";
+    content: "";
 }
 
 .w-icon-file-upload-remove:before {
-    content: "î¤€";
+    content: "";
 }
 
 .w-icon-file-upload-icon:before {
-    content: "î¤ƒ";
+    content: "";
 }
 
 * {
@@ -3545,7 +3550,7 @@ figure {
 }
 
 .team-name {
-    font-size: 26px;
+    font-size: 15px;
     transition: color .3s;
 }
 
@@ -7652,6 +7657,7 @@ figure {
         color: #fff;
         border-radius: 5px;
         padding: 12px;
+        z-index: 100;
     }
     .menu-button.w--open {
         background-color: #121212;
