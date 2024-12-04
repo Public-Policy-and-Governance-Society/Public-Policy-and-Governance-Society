@@ -392,7 +392,7 @@ const dt = [
         "profile_pic": "./team_24_25/images_2024-2025/team/B_Siddaarth.jpg"
     },
     {
-        "em_name": "Pragada Vikas",
+        "em_name": "Vikas Arjun",
         "team": " ",
         "": "",
         "email_ID ": "vikasarjunpragada43@gmail.com",

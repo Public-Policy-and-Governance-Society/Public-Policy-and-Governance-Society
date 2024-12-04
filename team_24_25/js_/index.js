@@ -149,7 +149,7 @@ $(window).scroll(function() {
 });
 
 window.CustomSubstackWidget = {
-    substackUrl: "https://edciitdelhi.substack.com/",
+    substackUrl: "https://ppgsiitkgp.in/",
     placeholder: "example@gmail.com",
     buttonText: "Subscribe",
     theme: "custom",

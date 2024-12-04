@@ -1496,6 +1496,22 @@ header .header-social li a:hover {
     float: right;
 }
 
+#nav-wrap .mobile-logo a {
+    display: none;
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 0;
+    border: none;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    width: 50px;
+    height: 50px;
+    background: url("../images/logo.png") no-repeat center;
+    background-size: 50px 50px;
+}
+
 /* hide toggle button */
 
 #nav-wrap>a {
@@ -1573,6 +1589,9 @@ ul#nav li.current a:after {
 @media only screen and (max-width: 768px) {
     .logo {
         display: none;
+    }
+    #nav-wrap .mobile-logo a {
+        display: block;
     }
     #nav-wrap {
         z-index: 700;
@@ -3427,7 +3446,7 @@ element.style {
     width: 200px;
     height: 200px;
     position: center;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .sponsor img {
