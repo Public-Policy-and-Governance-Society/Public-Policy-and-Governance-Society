@@ -23,12 +23,12 @@
 }
 
 #about p,
-#responsibilities p {
+#globalnetwork p {
     font-size: 18px;
     color: #281c1c;
 }
 
-#responsibilities h3 {
+#globalnetwork h3 {
     margin: unset;
 }
 

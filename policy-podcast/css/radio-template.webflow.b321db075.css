@@ -1370,8 +1370,8 @@ textarea.w-input, textarea.w-select {
 .w-dropdown {
   text-align: left;
   z-index: 900;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   display: inline-block;
   position: relative;
 }
@@ -3758,6 +3758,32 @@ figcaption {
   grid-auto-columns: 1fr;
   margin-bottom: 56px;
   display: grid;
+}
+
+@media screen and (max-width: 767px) {
+  .home-episodes-grid {
+    grid-column-gap: 28px;
+    grid-row-gap: 40px;
+    text-align: left;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    margin-bottom: 56px;
+    display: grid;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .home-episodes-grid {
+    grid-column-gap: 28px;
+    grid-row-gap: 40px;
+    text-align: left;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
+    margin-bottom: 6px;
+    display: grid;
+  }
 }
 
 .card-episode-content {
@@ -6463,6 +6489,16 @@ figcaption {
   right: -20px;
 }
 
+.team {
+  display:flex ; 
+  flex-wrap: nowrap; 
+  justify-content: space-between; 
+}
+
+.lef {
+  margin-right: 50px;
+}
+
 @media screen and (min-width: 1440px) {
   .container-default-1256px {
     max-width: 1300px;
@@ -7677,17 +7713,20 @@ figcaption {
     width: 100%;
     text-align: center;
     font-size: 18px;
+    padding: 26px 0px;
   }
 
   .white-button.large.play {
     width: 100%;
     justify-content: center;
+    padding: 26px 0px;
   }
 
   .white-button.about-host {
     width: 100%;
     text-align: center;
     font-size: 18px;
+    padding: 26px 0px;
   }
 
   .split-content.hero, .split-content.community {
@@ -7923,6 +7962,7 @@ figcaption {
 
   .dropdown-cta, .dropdown-cta-toggle {
     width: 100%;
+    padding: 26px 0px;
   }
 
   .dropdown-text-cta {
@@ -7966,6 +8006,7 @@ figcaption {
   .dropdown-subscribe {
     width: 100%;
     align-self: stretch;
+    padding: 26px 0px;
   }
 
   .hero-image {
@@ -8623,10 +8664,13 @@ figcaption {
   .white-button {
     width: 100%;
     text-align: center;
+    padding: 0%;
+    padding: 26px 0px;
   }
 
   .white-button.large.play {
     width: 100%;
+    padding: 26px 0px;
   }
 
   .split-content.community {
@@ -8808,6 +8852,7 @@ figcaption {
 
   .dropdown-cta-toggle {
     width: 100%;
+    padding: 26px 0px;
   }
 
   .dropdown-text-cta {
@@ -8845,6 +8890,7 @@ figcaption {
 
   .dropdown-subscribe {
     width: 100%;
+    padding: 26px 0px;
   }
 
   .hero-image {
@@ -9212,6 +9258,14 @@ figcaption {
 
   .more-templates-lottie {
     width: 40px;
+  }
+
+  .team {
+    flex-direction: column;
+  }
+
+  .lef {
+    margin-right: 0%;
   }
 }
 
