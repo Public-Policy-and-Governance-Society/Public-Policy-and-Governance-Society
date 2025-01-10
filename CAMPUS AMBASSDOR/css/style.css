@@ -13497,6 +13497,10 @@ a.btn:not([href]):not([tabindex]).disabled {
     padding: 1.8rem 2rem;
 }
 
+.word-para {
+    font-size: 16.5px;
+}
+
 .card .card-body-title {
     font-size: 18px;
     line-height: 26px;
@@ -17185,6 +17189,69 @@ body.breakpoint-xs hr.space-xxlg,
 body.breakpoint-sm hr.space-xxlg {
     height: 80px;
 }
+
+.custom-card {
+    background-color: #fff;
+    border: none;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.custom-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.card-image-container {
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-image {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.card-image-container:hover .card-image {
+    transform: scale(1.1);
+}
+
+.fab-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card-image-container:hover .fab-icons {
+    opacity: 1;
+}
+
+.fab-icon {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.fab-icon:hover {
+    transform: scale(1.2);
+}
+
+.card-content {
+    padding: 15px;
+}
+
 
 /* ----------------------------------------------------------------------
 	Seperator
