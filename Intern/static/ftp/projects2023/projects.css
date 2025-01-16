@@ -117,7 +117,10 @@ body {
 
 li .card {
     position: relative;
-    display: block;
+    /* display: block; */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
