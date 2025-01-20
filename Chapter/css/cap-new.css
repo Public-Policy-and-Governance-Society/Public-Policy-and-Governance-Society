@@ -1,0 +1,112 @@
+.incentive-box .in-sponsor-name {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.incentive-box li {
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 1em;
+}
+
+.incentive-box .in-sponsor-name a {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.incentive-box img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+}
+
+#about p,
+#globalnetwork p {
+    font-size: 18px;
+    color: #281c1c;
+}
+
+#globalnetwork h3 {
+    margin: unset;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    /* font-size: 6rem; */
+    font-weight: 800;
+    color: #2e1e38;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: unset !important;
+    padding-bottom: unset;
+}
+
+h2 {
+    color: #2e1e38;
+    font-size: 4rem !important;
+    font-family: "Oswald", sans-serif;
+    /* text-transform: uppercase; */
+}
+
+h3.ecell {
+    color: #3d254d;
+    margin: unset;
+    font-size: 3rem !important;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+}
+
+/* .timeline-icon {
+	background-color: transparent !important;
+	color: var(--basecolor) !important;
+} */
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 3rem !important;
+    }
+    .incentive-box {
+        border-bottom: 1px solid #aaa;
+        margin-bottom: 40px;
+    }
+}
+
+.bg-parallax {
+    position: absolute !important;
+    bottom: 0 !important;
+}
+
+.center {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.t-0 {
+    top: 0;
+}
+
+.b-0 {
+    bottom: 0;
+}
+
+.l-0 {
+    left: 0;
+}
+
+.r-0 {
+    right: 0;
+}
+
+@keyframes sheen {
+    100% {
+        transform: rotateZ(60deg) translate(1em, -23em);
+    }
+}
