@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="en">
 
 <head>
     <!--====== USEFULL META ======-->
@@ -28,7 +28,7 @@
 
     <!--====== MAIN STYLESHEETS ======-->
     <link href="article/css/style.css" rel="stylesheet" />
-    <link href="article/assets/css/responsive.css" type="text/html" rel="stylesheet" />
+    <link href="article/assets/css/responsive.css" type="html" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
@@ -215,19 +215,9 @@
             font-weight: 500;
         }
         
-        /* Article date styling */
-        .article-date {
-            color: #777;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-        
-        /* Results counter */
-        .results-info {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #666;
-            font-style: italic;
+        /* Article title styling adjustment */
+        .blog-title {
+            margin-top: 0;
         }
     </style>
 
@@ -397,11 +387,6 @@
                 </div>
             </div>
             
-            <!-- Results info -->
-            <div class="results-info" id="results-info">
-                Showing all articles
-            </div>
-            
             <!-- Loading indicator -->
             <div class="loading" id="loading-indicator">
                 <div class="loading-spinner"></div>
@@ -494,7 +479,6 @@
                 image: "article/images/profile/pourush.png",
                 description: "Mr. Pourush Sood is an alumnus of the department of Electronics and Communication Engineering, IIT Kharagpur of the 2020 batch, He has secured all India rank of 29.",
                 categories: ["upsc", "guidance"],
-                date: "2024-05-15",
                 alt: "Portrait of Mr. Pourush Sood"
             },
             {
@@ -504,7 +488,6 @@
                 image: "Home page/images/UCC.jpeg",
                 description: "Uniform Civil Code is a proposal to create and enforce personal laws that apply to all people equally, regardless..",
                 categories: ["policy"],
-                date: "2024-05-10",
                 alt: "Illustration representing Uniform Civil Code"
             },
             {
@@ -514,7 +497,6 @@
                 image: "article/images/profile/Public Procurement.png",
                 description: "From streamlined processes to enhanced transparency, technology serves as a catalyst for efficiency and accountability in public procurement.",
                 categories: ["policy"],
-                date: "2024-05-05",
                 alt: "Technology in public procurement visualization"
             },
             {
@@ -524,7 +506,6 @@
                 image: "article/images/profile/Kabhinav.png",
                 description: "Choosing the Best Optional Subject for UPSC is a critical decision, and several key factors should guide your choice..",
                 categories: ["upsc", "guidance"],
-                date: "2024-04-28",
                 alt: "Portrait of Kumar Abhinav"
             },
             {
@@ -534,7 +515,6 @@
                 image: "article/images/profile/manipur.png",
                 description: "The violence in Manipur began on May 3, triggered by a solidarity march organized by the All Tribal Students Union Manipur (ATSUM) in opposition to a Manipur High Court order.",
                 categories: ["policy"],
-                date: "2024-04-20",
                 alt: "Map or image related to Manipur situation"
             },
             {
@@ -544,7 +524,6 @@
                 image: "Blog/Images/guidance.jpeg",
                 description: "Comprehensive Guidance for Kgpians Specific on the Path to Civil Services Excellence.",
                 categories: ["guidance", "upsc"],
-                date: "2024-04-15",
                 alt: "UPSC guidance and preparation materials"
             },
             {
@@ -554,7 +533,6 @@
                 image: "article/images/profile/Mr. Abhinav Jain.png",
                 description: "The day-to-day of an ordinary common man goes on undisturbed because of the executives that are bureaucrats Politicians may be the masters, but civil servants are...",
                 categories: ["upsc", "interview"],
-                date: "2024-04-10",
                 alt: "Portrait of Mr. Abhinav Jain"
             },
             {
@@ -564,7 +542,6 @@
                 image: "article/images/profile/yoga.png",
                 description: "Swami Vivekananda was largely responsible for the spread of yoga to western societies. It was more focused on..",
                 categories: ["policy"],
-                date: "2024-04-05",
                 alt: "Yoga practice illustration"
             },
             {
@@ -574,7 +551,6 @@
                 image: "article/images/profile/Abhinandan.png",
                 description: "Inner satisfaction is what gets you going and derives meaning from being a civil servant which no other service could..",
                 categories: ["upsc", "guidance"],
-                date: "2024-03-28",
                 alt: "Portrait of Abhinandan"
             },
             {
@@ -584,7 +560,6 @@
                 image: "article/images/profile/gorantla.png",
                 description: "Without community service, we would not have a stronger quality of life, and it's important to the person who serves as...",
                 categories: ["upsc"],
-                date: "2024-03-20",
                 alt: "Portrait of Gorantla"
             },
             {
@@ -594,7 +569,6 @@
                 image: "Blog/Images/dds_india-thailand.png",
                 description: "Exclusive Eye-Opening Interview: Secrets of India-Thailand Relations",
                 categories: ["interview", "policy"],
-                date: "2024-03-15",
                 alt: "India-Thailand relations visual"
             },
             {
@@ -604,7 +578,6 @@
                 image: "article/images/profile/anju.png",
                 description: "Until my final year,I had no plans for civil services or appearing for the UPSC exam. The major turning point in my life that made me go for civil services was the migrant crisis during..",
                 categories: ["upsc", "guidance"],
-                date: "2024-03-10",
                 alt: "Portrait of Anju"
             },
             {
@@ -614,7 +587,6 @@
                 image: "Blog/Images/achievers_2024.jpg",
                 description: "UPSC aspirants strive for excellence, embarking on a journey of knowledge and dedication. Their pursuit is not just a goal but a commitment to serve the nation...",
                 categories: ["upsc", "guidance"],
-                date: "2024-03-05",
                 alt: "UPSC achievers collage"
             },
             {
@@ -624,7 +596,6 @@
                 image: "Blog/Images/dds_bhutan.jpg",
                 description: "Exclusive insights into the diplomatic relations between India and Bhutan.",
                 categories: ["policy", "interview"],
-                date: "2024-02-28",
                 alt: "India-Bhutan relations visual"
             },
             {
@@ -634,7 +605,6 @@
                 image: "Blog/Images/msp_cover.webp",
                 description: "Minimum Support Price ('MSP'), as the name suggests, is the minimum price offered to the farmers for their produce and inter alia to ensure stable..",
                 categories: ["policy"],
-                date: "2024-02-20",
                 alt: "MSP policy illustration"
             },
             {
@@ -644,7 +614,6 @@
                 image: "article/images/profile/Broken Window Policy.png",
                 description: "The nature of the broken window theory is a perception-based analysis of a societal problem. The external environment and crimes are sometimes...",
                 categories: ["policy"],
-                date: "2024-02-15",
                 alt: "Kharagpur Ward 34 case study"
             },
             {
@@ -654,7 +623,6 @@
                 image: "Blog/Images/House.webp",
                 description: "The recently released All-India Household Consumption Expenditure Survey offers valuable insights into household spending patterns...",
                 categories: ["policy"],
-                date: "2024-02-10",
                 alt: "Household consumption survey"
             },
             {
@@ -664,7 +632,6 @@
                 image: "Blog/Images/conquering upsc.jpg",
                 description: "Mr. Rohit Kumar, an alumnus of the Department of Civil Engineering, IIT Kharagpur, achieved an All India Rank (AIR) of 8 in the UPSC Civil Services Examination...",
                 categories: ["upsc", "guidance"],
-                date: "2024-02-05",
                 alt: "UPSC ESE and GATE preparation"
             },
             {
@@ -674,7 +641,6 @@
                 image: "Blog/Images/waqf.jpg",
                 description: "India is home to one of the world's most intricate networks of religious endowments — the Waqf system. With over 8.7 lakh Waqf properties...",
                 categories: ["policy"],
-                date: "2024-01-28",
                 alt: "Waqf Act illustration"
             },
             {
@@ -684,7 +650,6 @@
                 image: "Blog/Images/Nelson-Mandela.jpg",
                 description: "Before apartheid formally began in 1948, British colonial rule in South Africa was marked by widespread racial oppression...",
                 categories: ["policy"],
-                date: "2024-01-20",
                 alt: "Nelson Mandela portrait"
             }
         ];
@@ -705,7 +670,6 @@
         function renderArticles() {
             const container = document.getElementById('articles-container');
             const loadingIndicator = document.getElementById('loading-indicator');
-            const resultsInfo = document.getElementById('results-info');
             
             // Show loading indicator
             loadingIndicator.style.display = 'block';
@@ -716,9 +680,6 @@
                 const filteredArticles = filterArticles();
                 const paginatedArticles = paginateArticles(filteredArticles);
                 
-                // Update results info
-                updateResultsInfo(filteredArticles.length);
-                
                 if (paginatedArticles.length === 0) {
                     container.innerHTML = '<div class="col-md-12 text-center"><p>No articles found matching your criteria.</p></div>';
                 } else {
@@ -728,24 +689,6 @@
                 
                 loadingIndicator.style.display = 'none';
             }, 500);
-        }
-
-        // Update results information
-        function updateResultsInfo(totalArticles) {
-            const resultsInfo = document.getElementById('results-info');
-            let message = '';
-            
-            if (currentSearch && currentFilter !== 'all') {
-                message = `Showing ${totalArticles} articles matching "${currentSearch}" in ${currentFilter}`;
-            } else if (currentSearch) {
-                message = `Showing ${totalArticles} articles matching "${currentSearch}"`;
-            } else if (currentFilter !== 'all') {
-                message = `Showing ${totalArticles} ${currentFilter} articles`;
-            } else {
-                message = `Showing all ${totalArticles} articles`;
-            }
-            
-            resultsInfo.textContent = message;
         }
 
         // Filter articles based on current filter and search
@@ -777,14 +720,6 @@
                 const articleElement = document.createElement('div');
                 articleElement.className = 'single-blog-item wow fadeInUp';
                 
-                // Format date
-                const dateObj = new Date(article.date);
-                const formattedDate = dateObj.toLocaleDateString('en-US', { 
-                    year: 'numeric', 
-                    month: 'long', 
-                    day: 'numeric' 
-                });
-                
                 // Create category tags HTML
                 const categoryTags = article.categories.map(category => 
                     `<span class="article-category">${category}</span>`
@@ -799,7 +734,6 @@
                         </a>
                     </div>
                     <div class="blog-details">
-                        <div class="article-date">${formattedDate}</div>
                         <div class="article-categories">
                             ${categoryTags}
                         </div>
