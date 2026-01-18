@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="en">
 
 <head>
     <!--====== USEFULL META ======-->
@@ -28,11 +28,201 @@
 
     <!--====== MAIN STYLESHEETS ======-->
     <link href="article/css/style.css" rel="stylesheet" />
-    <link href="article/assets/css/responsive.css" type="text/html" rel="stylesheet" />
+    <link href="article/assets/css/responsive.css" type="html" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="article/js/vendor/modernizr-2.8.3.min.js"></script>
+    
+    <!-- Custom styles for improvements -->
+    <style>
+        /* Search and filter styles */
+        .search-filter-container {
+            background: #f8f9fa;
+            padding: 30px 0;
+            margin-bottom: 40px;
+        }
+        
+        .search-box {
+            position: relative;
+            max-width: 500px;
+            margin: 0 auto 20px;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 12px 20px;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            font-size: 16px;
+        }
+        
+        .search-box button {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+        
+        .filter-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .filter-tag {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 5px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-tag.active, .filter-tag:hover {
+            background: #2c3e50;
+            color: white;
+        }
+        
+        /* Pagination styles */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+            gap: 5px;
+        }
+        
+        .pagination button {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ddd;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .pagination button.active, .pagination button:hover {
+            background: #2c3e50;
+            color: white;
+        }
+        
+        /* Loading animation */
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .loading-spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #2c3e50;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Article improvements */
+        .single-blog-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+        
+        .single-blog-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .blog-details {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .blog-meta {
+            flex-grow: 1;
+        }
+        
+        /* Improved image sizing to reduce empty space */
+        .blog-thumb {
+            height: 220px;
+            overflow: hidden;
+        }
+        
+        .blog-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Better spacing for article cards */
+        .blog-details {
+            padding: 20px;
+        }
+        
+        /* 4x3 Grid Layout (12 articles per page) */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        @media (max-width: 992px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Article category tags */
+        .article-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .article-category {
+            background: #e9ecef;
+            color: #495057;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        /* Article title styling adjustment */
+        .blog-title {
+            margin-top: 0;
+        }
+    </style>
 
+    <script src="article/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
 
 <body data-spy="scroll" data-target=".mainmenu-area" data-offset="90">
 
@@ -50,7 +240,7 @@
                     <div class="container">
                         <div class="navbar-header">
                             <a href="index.html" target="_blank" class="navbar-brand" style="padding: 0"><img
-                                    src="logo.png" alt="logo" style="max-height: 100%; max-width: 200px" /></a>
+                                    src="logo.png" alt="PPGS IIT Kharagpur Logo" style="max-height: 100%; max-width: 200px" /></a>
                         </div>
                         <div id="main-nav" class="stellarnav">
                             <ul id="nav" class="nav navbar-nav pull-right">
@@ -66,37 +256,10 @@
                                         <li>
                                             <a href="insight.html" target="_blank"> Insight Ignite</a>
                                         </li>
-                                        <!-- <li><a href="./policies.html">Internship Policies</a></li>
-                                        <li>
-                                            <a href="http://spo.iitk.ac.in/preparation/index.html" target="_blank">Preparation</a
-                        >
-                      </li> -->
-                                        <!-- <li>
-                        <a
-                          href="https://spo.iitk.ac.in/preparation/docs/guides/guide_for_resume.ppt"
-                          >Resume Guidelines</a
-                        >
-                      </li> -->
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="Policy.html" target="_blank">Policy</a>
-                                    <!-- <ul>
-                                                <li>
-                                                    <a href="https://sipp.iitk.ac.in" target="_blank">Sign In</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://sipp.iitk.ac.in/register"
-                          target="_blank"
-                          >Sign Up</a
-                        >
-                      </li>
-                      <li>
-                        <a href="./policies.html">Terms and Conditions</a>
-                                                </li>
-                                            </ul> -->
                                 </li>
                                 <li>
                                     <a href="internship.html" target="_blank">Internship</a>
@@ -108,15 +271,31 @@
             </div>
             <!--END MAINMENU AREA END-->
         </div>
-
-
     </header>
     <!--END TOP AREA-->
 
+    <!-- Search and Filter Section - ABOVE ARTICLES -->
+    <section class="search-filter-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Search articles by title or description..." aria-label="Search articles">
+                        <button id="search-button" aria-label="Search"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="filter-tags" id="filter-tags">
+                        <span class="filter-tag active" data-filter="all">All Articles</span>
+                        <span class="filter-tag" data-filter="upsc">UPSC</span>
+                        <span class="filter-tag" data-filter="policy">Policy</span>
+                        <span class="filter-tag" data-filter="interview">Interview</span>
+                        <span class="filter-tag" data-filter="guidance">Guidance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
-    <!--TESTIMONIAL AREA AREA-->
+    <!--TESTIMONIAL AREA-->
     <section class="testimonial-area section-padding bg-dark white" id="testimonial">
         <div class="container">
             <div class="row">
@@ -137,9 +316,6 @@
                                 </p>
                             </div>
                             <div class="author-name-image relative">
-                                <!-- <div class="author-img mb20">
-                                    <img src="assets/img/testimonial/testimonial.jpg" alt="">
-                                </div> -->
                                 <h4>APJ Abdul Kalam</h4>
                                 <p>11th President of India</p>
                             </div>
@@ -153,9 +329,6 @@
                                 </p>
                             </div>
                             <div class="author-name-image relative">
-                                <!-- <div class="author-img mb20">
-                                    <img src="assets/img/testimonial/testimonial.jpg" alt="">
-                                </div> -->
                                 <h4>Atal Bihari Vajpayee</h4>
                                 <p>Prime Minister of India</p>
                             </div>
@@ -167,9 +340,6 @@
                                 </p>
                             </div>
                             <div class="author-name-image relative">
-                                <!-- <div class="author-img mb20">
-                                    <img src="assets/img/testimonial/testimonial.jpg" alt="">
-                                </div> -->
                                 <h4>Mahatma Gandhi</h4>
                                 <p>Father of the Nation</p>
                             </div>
@@ -177,15 +347,12 @@
                         <div class="single-testimonial center">
                             <div class="author-content mb20 text-justify">
                                 <p>
-                                    Freedom is an imperishable birthright of all.” “Labor is the real sustainer of
+                                    Freedom is an imperishable birthright of all." "Labor is the real sustainer of
                                     society. I am a man and all that affects mankind concerns me.If the deaf have to
                                     hear, the sound has to be very loud.
                                 </p>
                             </div>
                             <div class="author-name-image relative">
-                                <!-- <div class="author-img mb20">
-                                    <img src="assets/img/testimonial/testimonial.jpg" alt="">
-                                </div> -->
                                 <h4>Bhagat Singh</h4>
                                 <p>Freedom Fighter</p>
                             </div>
@@ -207,7 +374,7 @@
             </div>
         </div>
     </section>
-    <!--TESTIMONIAL AREA AREA END-->
+    <!--TESTIMONIAL AREA END-->
 
     <!--BLOG AREA-->
     <section class="blog-feed-area padding-top" id="team">
@@ -219,553 +386,25 @@
                     </div>
                 </div>
             </div>
-            <div class="row center justify-content-center">
-
-                <div class="col-md-4 col-lg-4 col-sm-6 col-10">
-                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-thumb">
-                            <a href="Blog/Pourush_blog.html" target="_blank"><img
-                                    src="article//images/profile/pourush.png"
-                                    style="height: 35rem; width: 35rem; object-fit: cover" alt="" /></a>
-                        </div>
-                        <div class="blog-details padding30">
-                            <h3 class="blog-title font20 mb30">
-                                <a href="Blog/Pourush_blog.html" target="_blank">From Aspirant to Achiever</a>
-                            </h3>
-
-                            <p class="blog-meta font14 mt20">
-                                <a href="Blog/Pourush_blog.html" target="_blank">Mr. Pourush Sood is an alumnus of the
-                                    department of Electronics and Communication Engineering,IIT Kharagpur of the 2020
-                                    batch, He
-                                    has secured all India rank of 29.. </a>
-                                <br>
-                                <a href="Blog/Pourush_blog.html" target="_blank">
-                                    <h4>Read more..</h4>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-6 col-10">
-                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-thumb">
-                            <a href="Blog/UCC_Blog.html" target="_blank"><img src="Home page/images/UCC.jpeg"
-                                    style="height: 35rem; width: 35rem; object-fit: cover" alt="" /></a>
-                        </div>
-                        <div class="blog-details padding30">
-                            <h3 class="blog-title font20 mb30">
-                                <a href="Blog/UCC_Blog.html" target="_blank"> UNIFORM CIVIL CODE </a>
-                            </h3>
-
-                            <p class="blog-meta font14 mt20">
-                                <a href="Blog/UCC_Blog.html" target="_blank">Uniform Civil Code is a proposal to create
-                                    and enforce personal laws that apply to all people equally, regardless..</a>
-                                <br>
-                                <a href="Blog/UCC_Blog.html" target="_blank">
-                                    <h4>Read more..</h4>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-6 col-10">
-                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-thumb">
-                            <a href="Blog/public_procurement.html" target="_blank"><img
-                                    src="article//images/profile/Public Procurement.png"
-                                    style="height: 35rem; width: 35rem; object-fit: cover" alt="" /></a>
-                        </div>
-                        <div class="blog-details padding30">
-                            <h3 class="blog-title font20 mb30">
-                                <a href="Blog/public_procurement.html" target="_blank">Application of Technologies in
-                                    Public Procurement</a>
-                            </h3>
-
-                            <p class="blog-meta font14 mt20">
-                                <a href="Blog/public_procurement.html" target="_blank">From streamlined processes to
-                                    enhanced transparency, technology serves as a catalyst for efficiency and
-                                    accountability in public procurement.Discover the transformative impact technology
-                                    holds in optimizing public procurement..</a>
-                                <br>
-                                <a href="Blog/public_procurement.html" target="_blank">
-                                    <h4>Read more..</h4>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <br><br><br>
-
-            <div class="row center justify-content-center">
-                <div class="col-md-4 col-lg-4 col-sm-6 col-10">
-                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-thumb">
-                            <a href="Blog/KumarAbhinav_blog.html" target="_blank"><img
-                                    src="article/images/profile/Kabhinav.png"
-                                    style="height: 35rem; width: 35rem; object-fit: cover" alt="" /></a>
-                        </div>
-                        <div class="blog-details padding30">
-                            <h3 class="blog-title font20 mb30">
-                                <a href="Blog/KumarAbhinav_blog.html" target="_blank">Roadmap to Crack UPSC </a>
-                            </h3>
-
-                            <p class="blog-meta font14 mt20">
-                                <a href="Blog/KumarAbhinav_blog.html" target="_blank">Choosing the Best Optional Subject
-                                    for UPSC is a critical decision, and several key factors should guide your
-                                    choice..</a>
-                                <br>
-                                <a href="Blog/KumarAbhinav_blog.html" target="_blank">
-                                    <h4>Read more..</h4>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-6 col-10">
-                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-thumb">
-                            <a href="Blog/Manipur_Riots.html" target="_blank"><img
-                                    src="article//images/profile/manipur.png"
-                                    style="height: 35rem; width: 35rem; object-fit: cover" alt="" /></a>
-                        </div>
-                        <div class="blog-details padding30">
-                            <h3 class="blog-title font20 mb30">
-                                <a href="Blog/Manipur_Riots.html" target="_blank"> Manipur Riots</a>
-                            </h3>
-
-                            <p class="blog-meta font14 mt20">
-                                <a href="Blog/Manipur_Riots.html" target="_blank">The violence in Manipur began on May
-                                    3, triggered by a solidarity march organized by the All Tribal Students Union
-                                    Manipur (ATSUM) in opposition to a Manipur High Court order. </a>
-                                <br>
-                                <a href="Blog/Manipur_Riots.html" target="_blank">
-                                    <h4>Read more..</h4>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-6 col-10">
-                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-thumb">
-                            <a href="Blog/guidance.html" target="_blank"><img src="Blog\Images\guidance.jpeg"
-                                    style="height: 35rem; width: 35rem; object-fit: cover" alt="" /></a>
-                        </div>
-                        <div class="blog-details padding30">
-                            <h3 class="blog-title font20 mb30">
-                                <a href="Blog/guidance.html" target="_blank">Complete UPSC Guidance</a>
-                            </h3>
-
-                            <p class="blog-meta font14 mt20">
-                                <a href="Blog/guidance.html" target="_blank">Comprehensive Guidance for Kgpians Specific
-                                    on the Path to Civil Services Excellence. </a>
-                                <br>
-                                <a href="Blog/guidance.html" target="_blank">
-                                    <h4>Read more..</h4>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br><br><br>
-
-            <div class="row center justify-content-center">
-                <div class="col-md-4 col-lg-4 col-sm-6 col-10">
-                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-thumb">
-                            <a href="Blog/Abhinav_blog.html" target="_blank"><img
-                                    src="article/images/profile/Mr. Abhinav Jain.png"
-                                    style="height: 35rem; width: 35rem; object-fit: cover" alt="" /></a>
-                        </div>
-                        <div class="blog-details padding30">
-                            <h3 class="blog-title font20 mb30">
-                                <a href="Blog/Abhinav_blog.html" target="_blank">Unlocking the UPSC Secrets</a>
-                            </h3>
-
-                            <p class="blog-meta font14 mt20">
-                                <a href="Blog/Abhinav_blog.html" target="_blank">The day-to-day of an ordinary common
-                                    man goes on undisturbed because of the executives that are bureaucrats Politicians
-                                    may be the masters, but civil servants are...</a>
-                                <br>
-                                <a href="Blog/Abhinav_blog.html" target="_blank">
-                                    <h4>Read more..</h4>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-6 col-10">
-                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-thumb">
-                            <a href="Blog/yodaday.html" target="_blank"><img src="article//images/profile/yoga.png"
-                                    style="height: 35rem; width: 35rem; object-fit: cover" alt="" /></a>
-                        </div>
-                        <div class="blog-details padding30">
-                            <h3 class="blog-title font20 mb30">
-                                <a href="Blog/yodaday.html" target="_blank"> INTERNATIONAL YOGA DAY </a>
-                            </h3>
-
-                            <p class="blog-meta font14 mt20">
-                                <a href="Blog/yodaday.html" target="_blank">Swami Vivekananda was largely responsible
-                                    for the spread of yoga to western societies. It was more focused on.. </a>
-                                <br>
-                                <a href="Blog/yodaday.html" target="_blank">
-                                    <h4>Read more..</h4>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-6 col-10">
-                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-thumb">
-                            <a href="Blog/Abhinandan_blog.html" target="_blank"><img
-                                    src="article//images/profile/Abhinandan.png"
-                                    style="height: 35rem; width: 35rem; object-fit: cover" alt="" /></a>
-                        </div>
-                        <div class="blog-details padding30">
-                            <h3 class="blog-title font20 mb30">
-                                <a href="Blog/Abhinandan_blog.html" target="_blank"> Decoding The UPSC Mystery</a>
-                            </h3>
-
-                            <p class="blog-meta font14 mt20">
-                                <a href="Blog/Abhinandan_blog.html" target="_blank">Inner satisfaction is what gets you
-                                    going and derives meaning from being a civil servant which no other service
-                                    could..</a>
-                                <br>
-                                <a href="Blog/Abhinandan_blog.html" target="_blank">
-                                    <h4>Read more..</h4>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <br><br><br>
-
-            <div class="row center justify-content-center">
-                <div class="col-md-4 col-lg-4 col-sm-6 col-10">
-                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-thumb">
-                            <a href="Blog/Gorantla_blog.html" target="_blank"><img
-                                    src="article/images/profile/gorantla.png"
-                                    style="height: 35rem; width: 35rem; object-fit: cover" alt="" /></a>
-                        </div>
-                        <div class="blog-details padding30">
-                            <h3 class="blog-title font20 mb30">
-                                <a href="Blog/Gorantla_blog.html" target="_blank">Unlocking the UPSC ESE Mystery</a>
-                            </h3>
-
-                            <p class="blog-meta font14 mt20">
-                                <a href="Blog/Gorantla_blog.html" target="_blank">Without community service, we would
-                                    not have a stronger quality of life, and it’s important to the person who serves
-                                    as...</a>
-                                <br>
-                                <a href="Blog/Gorantla_blog.html" target="_blank">
-                                    <h4>Read more..</h4>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-6 col-10">
-                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-thumb">
-                            <a href="Blog/dds_india-thailand-ties.html" target="_blank"><img
-                                    src="Blog/Images/dds_india-thailand.png"
-                                    style="height: 35rem; width: 35rem; object-fit: cover" alt="" /></a>
-                        </div>
-                        <div class="blog-details padding30">
-                            <h3 class="blog-title font20 mb30">
-                                <a href="Blog/dds_india-thailand-ties.html" target="_blank">India-Thailand Ties
-                                    Interview</a>
-                            </h3>
-
-                            <p class="blog-meta font14 mt20">
-                                <a href="Blog/dds_india-thailand-ties.html" target="_blank">Exclusive Eye-Opening
-                                    Interview : Secrets of India-Thailand Relations</a>
-                                <br>
-                                <a href="Blog/dds_india-thailand-ties.html" target="_blank">
-                                    <h4>Read more..</h4>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-lg-4 col-sm-6 col-10">
-                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-thumb">
-                            <a href="Blog/Anju_blog.html" target="_blank"><img src="article//images/profile/anju.png"
-                                    style="height: 35rem; width: 35rem; object-fit: cover" alt="" /></a>
-                        </div>
-                        <div class="blog-details padding30">
-                            <h3 class="blog-title font20 mb30">
-                                <a href="Blog/Anju_blog.html" target="_blank">Cracking the UPSC Code</a>
-                            </h3>
-
-                            <p class="blog-meta font14 mt20">
-                                <a href="Blog/Anju_blog.html" target="_blank">Until my final year,I had no plans for
-                                    civil services or appearing for the UPSC exam. The major
-                                    turning point in my life that made me go for civil services was the migrant crisis
-                                    during..</a>
-                                <br>
-                                <a href="Blog/Anju_blog.html" target="_blank">
-                                    <h4>Read more..</h4>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br><br><br>
-
-
-            <div class="row center justify-content-center">
-                <div class="col-md-4 col-lg-4 col-sm-6 col-10">
-                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-thumb">
-                            <a href="Blog/Achievers-2024.html" target="_blank"><img
-                                    src="Blog/Images/achievers_2024.jpg"
-                                    style="height: 35rem; width: 35rem; object-fit: cover" alt="" /></a>
-                        </div>
-                        <div class="blog-details padding30">
-                            <h3 class="blog-title font20 mb30">
-                                <a href="Blog/Achievers-2024.html" target="_blank">Unlocking the UPSC Secrets</a>
-                            </h3>
-                            <p class="blog-meta font14 mt20">
-                                <a href="Blog/Achievers-2024.html" target="_blank">UPSC aspirants strive for excellence, embarking on a journey of knowledge and dedication. Their pursuit is not just a goal but a commitment to serve the nation with integrity and intellect, shaping the future of India...</a>
-                                <br>
-                                <a href="Blog/Achievers-2024.html" target="_blank">
-                                    <h4>Read more..</h4>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-6 col-10">
-                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-thumb">
-                            <a href="Blog/dds_india-bhutan.html" target="_blank"><img src="Blog/Images/dds_bhutan.jpg"
-                                    style="height: 35rem; width: 35rem; object-fit: cover" alt="" /></a>
-                        </div>
-                        <div class="blog-details padding30">
-                            <h3 class="blog-title font20 mb30">
-                                <a href="Blog/dds_india-bhutan.html" target="_blank">Secrets of India-Bhutan Relations</a>
-                            </h3>
-
-                            <p class="blog-meta font14 mt20">
-                                <a href="Blog/dds_india-bhutan.html" target="_blank">Swami Vivekananda was largely responsible
-                                    for the spread of yoga to western societies. It was more focused on.. </a>
-                                <br>
-                                <a href="Blog/dds_india-bhutan.html" target="_blank">
-                                    <h4>Read more..</h4>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-6 col-10">
-                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-thumb">
-
-                            <a href="Blog/msp.html" target="_blank"><img src="Blog/Images/msp_cover.webp"
-
-                                    style="height: 35rem; width: 35rem; object-fit: cover" alt="" /></a>
-                        </div>
-                        <div class="blog-details padding30">
-                            <h3 class="blog-title font20 mb30">
-
-                                <a href="Blog/msp.html" target="_blank">Law on MSP: A farmer's dream with a touch of reality</a>
-                            </h3>
-
-                            <p class="blog-meta font14 mt20">
-                                <a href="Blog/msp.html" target="_blank">Minimum Support Price ('MSP'), as the name suggests, is the minimum price offered to the
-                                    farmers for their produce and inter alia to ensure stable.. </a>
-                                <br>
-                                <a href="Blog/msp.html" target="_blank">
-
-                                    <h4>Read more..</h4>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-         <br><br><br>
-            <div class="row center justify-content-center">
-                <div class="col-md-4 col-lg-4 col-sm-6 col-10">
-                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-thumb">
-                            <a href="Blog/Kharagpur_Ward34.html" target="_blank"><img
-                                    src="article/images/profile/Broken Window Policy.png"
-                                    style="height: 35rem; width: 35rem; object-fit: cover" alt="" /></a>
-                        </div>
-                        <div class="blog-details padding30">
-                            <h3 class="blog-title font20 mb30">
-                                <a href="Blog/Kharagpur_Ward34.html" target="_blank">Case Study of Kharagpur Ward 34</a>
-                            </h3>
-                            <p class="blog-meta font14 mt20">
-                                <a href="Blog/Kharagpur_Ward34.html" target="_blank">The nature of the broken window theory is a perception-based analysis of a societal problem. The external environment and crimes are sometimes...</a>
-                                <br>
-                                <a href="Blog/Kharagpur_Ward34.html" target="_blank">
-                                    <h4>Read more..</h4>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-6 col-10">
-                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-thumb">
-                            <a href="./Blog/household.html" target="_blank"><img src="Blog/Images/House.webp"
-                                    style="height: 35rem; width: 35rem; object-fit: cover" alt="" /></a>
-                        </div>
-                        <div class="blog-details padding30">
-                            <h3 class="blog-title font20 mb30">
-                                <a href="./Blog/household.html" target="_blank">Household Consumption Expenditure Survey</a>
-                            </h3>
-
-                            <p class="blog-meta font14 mt20">
-                                <a href="./Blog/household.html" target="_blank">The recently released All-India Household Consumption Expenditure Survey offers valuable insights into household spending patterns, crucial for shaping economic policies and evaluating key economic indicators... </a>
-                                <br>
-                                <a href="./Blog/household.html" target="_blank">
-                                    <h4>Read more..</h4>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-6 col-10">
-                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-thumb">
-                            <a href="./Blog/CONQUERING THE UPSE.html" target="_blank"><img src="Blog/Images/conquering upsc.jpg"
-                                    style="height: 35rem; width: 35rem; object-fit: cover" alt="" /></a>
-                        </div>
-                        <div class="blog-details padding30">
-                            <h3 class="blog-title font20 mb30">
-                                <a href="./Blog/CONQUERING THE UPSE.html" target="_blank"> CONQUERING THE UPSE<BR> ESE & GATE</a>
-                            </h3>
-
-                            <p class="blog-meta font14 mt20">
-                                <a href="./Blog/CONQUERING THE UPSE.html" target="_blank">Mr. Rohit Kumar, an alumnus of the Department of Civil Engineering, IIT Kharagpur, achieved an All India Rank (AIR) of 8 in the UPSC Civil Services Examination (ESE) 2024. Mr. Himanshu Thapliyal, a prominent alumnus of.... </a>
-                                <br>
-                                <a href="./Blog/CONQUERING THE UPSE.html" target="_blank">
-                                    <h4>Read more..</h4>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <br><br><br>
-            <div class="row center justify-content-center">
-                <div class="col-md-4 col-lg-4 col-sm-6 col-10">
-                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-thumb">
-                            <a href="Blog/waqf.html" target="_blank"><img
-                                    src="Blog/Images/waqf.jpg"
-                                    style="height: 35rem; width: 35rem; object-fit: cover" alt="" /></a>
-                        </div>
-                        <div class="blog-details padding30">
-                            <h3 class="blog-title font20 mb30">
-                                <a href="Blog/waqf.html" target="_blank">Understanding the Waqf (Amendment) Act, 2025</a>
-                            </h3>
-                            <p class="blog-meta font14 mt20">
-                                <a href="Blog/waqf.html" target="_blank">India is home to one of the world's most intricate networks of religious endowments — the Waqf system. With over 8.7 lakh Waqf properties sprawling across 9.4 lakh acres, these assets...</a>
-                                <br>
-                                <a href="Blog/waqf.html" target="_blank">
-                                    <h4>Read more..</h4>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-6 col-10">
-                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-thumb">
-                            <a href="Blog/Mandela_Story.html" target="_blank"><img
-                                    src="Blog/Images/Nelson-Mandela.jpg"
-                                    style="height: 35rem; width: 35rem; object-fit: cover" alt="" /></a>
-                        </div>
-                        <div class="blog-details padding30">
-                            <h3 class="blog-title font20 mb30">
-                                <a href="Blog/Mandela_Story.html" target="_blank">The Mandela Story: From Prison to Precidency</a>
-                            </h3>
-                            <p class="blog-meta font14 mt20">
-                                <a href="Blog/Mandela_Story.html" target="_blank">Before apartheid formally began in 1948, British colonial rule in South Africa was marked by widespread racial oppression, loss of ancestral homes, poverty, forced labor migration...</a>
-                                <br>
-                                <a href="Blog/Mandela_Story.html" target="_blank">
-                                    <h4>Read more..</h4>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
+            
+            <!-- Loading indicator -->
+            <div class="loading" id="loading-indicator">
+                <div class="loading-spinner"></div>
+                <p>Loading articles...</p>
             </div>
             
-
-        </div>
-        <br /><br /><br /><br />
-        <!--<div class="row mt50 justify-content-center view-more">
-          <button onclick="location.href='./team.html';">View Full Team</button>
-        </div> -->
+            <!-- Articles container -->
+            <div id="articles-container">
+                <!-- Articles will be loaded here by JavaScript -->
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination" id="pagination-container">
+                <!-- Pagination buttons will be generated by JavaScript -->
+            </div>
         </div>
     </section>
     <!--BLOG AREA END-->
-
-
-
-
-    <!--CLIENT AREA-->
-    <!--<div class="client-area  padding-bottom mt100 sm-mt10 xs-mt0">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                    <div class="client-slider">
-                        <div class="single-client">
-                            <img src="assets/img/client/client-6.png" alt="">
-                        </div>
-                        <div class="single-client">
-                            <img src="assets/img/client/client-7.png" alt="">
-                        </div>
-                        <div class="single-client">
-                            <img src="assets/img/client/client-8.png" alt="">
-                        </div>
-                        <div class="single-client">
-                            <img src="assets/img/client/client-9.png" alt="">
-                        </div>
-                        <div class="single-client">
-                            <img src="assets/img/client/client-10.png" alt="">
-                        </div>
-                        <div class="single-client">
-                            <img src="assets/img/client/client-6.png" alt="">
-                        </div>
-                        <div class="single-client">
-                            <img src="assets/img/client/client-7.png" alt="">
-                        </div>
-                        <div class="single-client">
-                            <img src="assets/img/client/client-8.png" alt="">
-                        </div>
-                        <div class="single-client">
-                            <img src="assets/img/client/client-9.png" alt="">
-                        </div>
-                        <div class="single-client">
-                            <img src="assets/img/client/client-10.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!--CLIENT AREA END-->
 
     <!--ADDMISSION AREA-->
     <section class="admition-area padding-50-50 bg-theme">
@@ -788,7 +427,6 @@
         </div>
     </section>
 
-
     <!--FOOER AREA-->
     <footer class="footer-area sky-gray-bg relative">
         <div class="footer-top-area padding-80-80 bg-dark">
@@ -797,65 +435,417 @@
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 center">
                         <div class="single-footer footer-about sm-mb50 xs-mb50 sm-center xs-center">
                             <div class="footer-logo mb30">
-                                <a href="index.html"><img src="logo.png" alt="" width="120" /></a>
+                                <a href="index.html"><img src="logo.png" alt="PPGS IIT Kharagpur Logo" width="120" /></a>
                             </div>
                             <p>Copyright © 2024 Tech Team PPGS, IIT Kharagpur</p>
                         </div>
                     </div>
-                    <!--<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 center">
-                        <div class="single-footer footer-list white xs-center xs-mb50">
-                            <ul>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Service</a></li>
-                                <li><a href="#">Team</a></li>
-                                <li><a href="#">Privicy Policy</a></li>
-                                <li><a href="#">Testimonial</a></li>
-                                <li><a href="#">Support</a></li>
-                            </ul>
-                        </div>
-                    </div> -->
-                    <!-- <div class="col-md-5 col-lg-5 col-sm-8 col-xs-12">
-                        <div class="single-footer footer-subscribe white xs-center">
-                            <h3 class="mb30 xs-font22">Subscribe Our Newsletter</h3>
-                            <p>Doubtful for answered one fat indulged margaret sir shutters together. Ladies so in
-                                wholly .</p>
-                            <div class="subscriber-form-area mt50 wow fadeIn">
-                                <form id="mc-form" class="subscriber-form">
-                                    <label class="mt10" for="mc-email"></label>
-                                    <input type="email" id="mc-email" placeholder="email@example.com">
-                                    <button type="submit" class="plus-btn"><i class="fa fa-paper-plane-o"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div> 
-          </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </footer>-->
+    </footer>
 
+    <!--====== SCRIPTS JS ======-->
+    <script src="article/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="article/js/vendor/bootstrap.min.js"></script>
 
-                    <!--====== SCRIPTS JS ======-->
-                    <script src="article/js/vendor/jquery-1.12.4.min.js"></script>
-                    <script src="article/js/vendor/bootstrap.min.js"></script>
+    <!--====== PLUGINS JS ======-->
+    <script src="article/js/vendor/jquery.easing.1.3.js"></script>
+    <script src="article/js/vendor/jquery-migrate-1.2.1.min.js"></script>
+    <script src="article/js/vendor/jquery.appear.js"></script>
+    <script src="article/js/owl.carousel.min.js"></script>
+    <script src="article/js/stellar.js"></script>
+    <script src="article/js/waypoints.min.js"></script>
+    <script src="article/js/jquery.counterup.min.js"></script>
+    <script src="article/js/wow.min.js"></script>
+    <script src="article/js/jquery-modal-video.min.js"></script>
+    <script src="article/js/stellarnav.min.js"></script>
+    <script src="article/js/placeholdem.min.js"></script>
+    <script src="article/js/contact-form.js"></script>
+    <script src="article/js/jquery.ajaxchimp.js"></script>
+    <script src="article/js/jquery.sticky.js"></script>
 
-                    <!--====== PLUGINS JS ======-->
-                    <script src="article/js/vendor/jquery.easing.1.3.js"></script>
-                    <script src="article/js/vendor/jquery-migrate-1.2.1.min.js"></script>
-                    <script src="article/js/vendor/jquery.appear.js"></script>
-                    <script src="article/js/owl.carousel.min.js"></script>
-                    <script src="article/js/stellar.js"></script>
-                    <script src="article/js/waypoints.min.js"></script>
-                    <script src="article/js/jquery.counterup.min.js"></script>
-                    <script src="article/js/wow.min.js"></script>
-                    <script src="article/js/jquery-modal-video.min.js"></script>
-                    <script src="article/js/stellarnav.min.js"></script>
-                    <script src="article/js/placeholdem.min.js"></script>
-                    <script src="article/js/contact-form.js"></script>
-                    <script src="article/js/jquery.ajaxchimp.js"></script>
-                    <script src="article/js/jquery.sticky.js"></script>
+    <!--===== ACTIVE JS=====-->
+    <script src="article/js/main.js"></script>
+    
+    <!-- Custom JavaScript for improvements -->
+    <script>
+        // Article data - all your articles converted from static HTML
+        const articles = [
+            {
+                id: 1,
+                title: "From Aspirant to Achiever",
+                link: "Blog/Pourush_blog.html",
+                image: "article/images/profile/pourush.png",
+                description: "Mr. Pourush Sood is an alumnus of the department of Electronics and Communication Engineering, IIT Kharagpur of the 2020 batch, He has secured all India rank of 29.",
+                categories: ["upsc", "guidance"],
+                alt: "Portrait of Mr. Pourush Sood"
+            },
+            {
+                id: 2,
+                title: "UNIFORM CIVIL CODE",
+                link: "Blog/UCC_Blog.html",
+                image: "Home page/images/UCC.jpeg",
+                description: "Uniform Civil Code is a proposal to create and enforce personal laws that apply to all people equally, regardless..",
+                categories: ["policy"],
+                alt: "Illustration representing Uniform Civil Code"
+            },
+            {
+                id: 3,
+                title: "Application of Technologies in Public Procurement",
+                link: "Blog/public_procurement.html",
+                image: "article/images/profile/Public Procurement.png",
+                description: "From streamlined processes to enhanced transparency, technology serves as a catalyst for efficiency and accountability in public procurement.",
+                categories: ["policy"],
+                alt: "Technology in public procurement visualization"
+            },
+            {
+                id: 4,
+                title: "Roadmap to Crack UPSC",
+                link: "Blog/KumarAbhinav_blog.html",
+                image: "article/images/profile/Kabhinav.png",
+                description: "Choosing the Best Optional Subject for UPSC is a critical decision, and several key factors should guide your choice..",
+                categories: ["upsc", "guidance"],
+                alt: "Portrait of Kumar Abhinav"
+            },
+            {
+                id: 5,
+                title: "Manipur Riots",
+                link: "Blog/Manipur_Riots.html",
+                image: "article/images/profile/manipur.png",
+                description: "The violence in Manipur began on May 3, triggered by a solidarity march organized by the All Tribal Students Union Manipur (ATSUM) in opposition to a Manipur High Court order.",
+                categories: ["policy"],
+                alt: "Map or image related to Manipur situation"
+            },
+            {
+                id: 6,
+                title: "Complete UPSC Guidance",
+                link: "Blog/guidance.html",
+                image: "Blog/Images/guidance.jpeg",
+                description: "Comprehensive Guidance for Kgpians Specific on the Path to Civil Services Excellence.",
+                categories: ["guidance", "upsc"],
+                alt: "UPSC guidance and preparation materials"
+            },
+            {
+                id: 7,
+                title: "Unlocking the UPSC Secrets",
+                link: "Blog/Abhinav_blog.html",
+                image: "article/images/profile/Mr. Abhinav Jain.png",
+                description: "The day-to-day of an ordinary common man goes on undisturbed because of the executives that are bureaucrats Politicians may be the masters, but civil servants are...",
+                categories: ["upsc", "interview"],
+                alt: "Portrait of Mr. Abhinav Jain"
+            },
+            {
+                id: 8,
+                title: "INTERNATIONAL YOGA DAY",
+                link: "Blog/yodaday.html",
+                image: "article/images/profile/yoga.png",
+                description: "Swami Vivekananda was largely responsible for the spread of yoga to western societies. It was more focused on..",
+                categories: ["policy"],
+                alt: "Yoga practice illustration"
+            },
+            {
+                id: 9,
+                title: "Decoding The UPSC Mystery",
+                link: "Blog/Abhinandan_blog.html",
+                image: "article/images/profile/Abhinandan.png",
+                description: "Inner satisfaction is what gets you going and derives meaning from being a civil servant which no other service could..",
+                categories: ["upsc", "guidance"],
+                alt: "Portrait of Abhinandan"
+            },
+            {
+                id: 10,
+                title: "Unlocking the UPSC ESE Mystery",
+                link: "Blog/Gorantla_blog.html",
+                image: "article/images/profile/gorantla.png",
+                description: "Without community service, we would not have a stronger quality of life, and it's important to the person who serves as...",
+                categories: ["upsc"],
+                alt: "Portrait of Gorantla"
+            },
+            {
+                id: 11,
+                title: "India-Thailand Ties Interview",
+                link: "Blog/dds_india-thailand-ties.html",
+                image: "Blog/Images/dds_india-thailand.png",
+                description: "Exclusive Eye-Opening Interview: Secrets of India-Thailand Relations",
+                categories: ["interview", "policy"],
+                alt: "India-Thailand relations visual"
+            },
+            {
+                id: 12,
+                title: "Cracking the UPSC Code",
+                link: "Blog/Anju_blog.html",
+                image: "article/images/profile/anju.png",
+                description: "Until my final year,I had no plans for civil services or appearing for the UPSC exam. The major turning point in my life that made me go for civil services was the migrant crisis during..",
+                categories: ["upsc", "guidance"],
+                alt: "Portrait of Anju"
+            },
+            {
+                id: 13,
+                title: "Achievers 2024",
+                link: "Blog/Achievers-2024.html",
+                image: "Blog/Images/achievers_2024.jpg",
+                description: "UPSC aspirants strive for excellence, embarking on a journey of knowledge and dedication. Their pursuit is not just a goal but a commitment to serve the nation...",
+                categories: ["upsc", "guidance"],
+                alt: "UPSC achievers collage"
+            },
+            {
+                id: 14,
+                title: "Secrets of India-Bhutan Relations",
+                link: "Blog/dds_india-bhutan.html",
+                image: "Blog/Images/dds_bhutan.jpg",
+                description: "Exclusive insights into the diplomatic relations between India and Bhutan.",
+                categories: ["policy", "interview"],
+                alt: "India-Bhutan relations visual"
+            },
+            {
+                id: 15,
+                title: "Law on MSP: A farmer's dream with a touch of reality",
+                link: "Blog/msp.html",
+                image: "Blog/Images/msp_cover.webp",
+                description: "Minimum Support Price ('MSP'), as the name suggests, is the minimum price offered to the farmers for their produce and inter alia to ensure stable..",
+                categories: ["policy"],
+                alt: "MSP policy illustration"
+            },
+            {
+                id: 16,
+                title: "Case Study of Kharagpur Ward 34",
+                link: "Blog/Kharagpur_Ward34.html",
+                image: "article/images/profile/Broken Window Policy.png",
+                description: "The nature of the broken window theory is a perception-based analysis of a societal problem. The external environment and crimes are sometimes...",
+                categories: ["policy"],
+                alt: "Kharagpur Ward 34 case study"
+            },
+            {
+                id: 17,
+                title: "Household Consumption Expenditure Survey",
+                link: "./Blog/household.html",
+                image: "Blog/Images/House.webp",
+                description: "The recently released All-India Household Consumption Expenditure Survey offers valuable insights into household spending patterns...",
+                categories: ["policy"],
+                alt: "Household consumption survey"
+            },
+            {
+                id: 18,
+                title: "CONQUERING THE UPSC ESE & GATE",
+                link: "./Blog/CONQUERING THE UPSE.html",
+                image: "Blog/Images/conquering upsc.jpg",
+                description: "Mr. Rohit Kumar, an alumnus of the Department of Civil Engineering, IIT Kharagpur, achieved an All India Rank (AIR) of 8 in the UPSC Civil Services Examination...",
+                categories: ["upsc", "guidance"],
+                alt: "UPSC ESE and GATE preparation"
+            },
+            {
+                id: 19,
+                title: "Understanding the Waqf (Amendment) Act, 2025",
+                link: "Blog/waqf.html",
+                image: "Blog/Images/waqf.jpg",
+                description: "India is home to one of the world's most intricate networks of religious endowments — the Waqf system. With over 8.7 lakh Waqf properties...",
+                categories: ["policy"],
+                alt: "Waqf Act illustration"
+            },
+            {
+                id: 20,
+                title: "The Mandela Story: From Prison to Presidency",
+                link: "Blog/Mandela_Story.html",
+                image: "Blog/Images/Nelson-Mandela.jpg",
+                description: "Before apartheid formally began in 1948, British colonial rule in South Africa was marked by widespread racial oppression...",
+                categories: ["policy"],
+                alt: "Nelson Mandela portrait"
+            }
+        ];
 
-                    <!--===== ACTIVE JS=====-->
-                    <script src="article/js/main.js"></script>
+        // Configuration
+        const articlesPerPage = 12; // 4 rows × 3 columns
+        let currentPage = 1;
+        let currentFilter = 'all';
+        let currentSearch = '';
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            renderArticles();
+            setupEventListeners();
+        });
+
+        // Render articles based on current filter, search, and page
+        function renderArticles() {
+            const container = document.getElementById('articles-container');
+            const loadingIndicator = document.getElementById('loading-indicator');
+            
+            // Show loading indicator
+            loadingIndicator.style.display = 'block';
+            container.innerHTML = '';
+            
+            // Simulate loading delay for better UX
+            setTimeout(() => {
+                const filteredArticles = filterArticles();
+                const paginatedArticles = paginateArticles(filteredArticles);
+                
+                if (paginatedArticles.length === 0) {
+                    container.innerHTML = '<div class="col-md-12 text-center"><p>No articles found matching your criteria.</p></div>';
+                } else {
+                    renderArticleCards(paginatedArticles, container);
+                    renderPagination(filteredArticles.length);
+                }
+                
+                loadingIndicator.style.display = 'none';
+            }, 500);
+        }
+
+        // Filter articles based on current filter and search
+        function filterArticles() {
+            return articles.filter(article => {
+                const matchesFilter = currentFilter === 'all' || 
+                    article.categories.includes(currentFilter);
+                const matchesSearch = currentSearch === '' || 
+                    article.title.toLowerCase().includes(currentSearch.toLowerCase()) ||
+                    article.description.toLowerCase().includes(currentSearch.toLowerCase());
+                
+                return matchesFilter && matchesSearch;
+            });
+        }
+
+        // Paginate articles
+        function paginateArticles(articles) {
+            const startIndex = (currentPage - 1) * articlesPerPage;
+            const endIndex = startIndex + articlesPerPage;
+            return articles.slice(startIndex, endIndex);
+        }
+
+        // Render article cards
+        function renderArticleCards(articles, container) {
+            const grid = document.createElement('div');
+            grid.className = 'articles-grid';
+            
+            articles.forEach(article => {
+                const articleElement = document.createElement('div');
+                articleElement.className = 'single-blog-item wow fadeInUp';
+                
+                // Create category tags HTML
+                const categoryTags = article.categories.map(category => 
+                    `<span class="article-category">${category}</span>`
+                ).join('');
+                
+                articleElement.innerHTML = `
+                    <div class="blog-thumb">
+                        <a href="${article.link}" target="_blank">
+                            <img src="${article.image}" 
+                                 alt="${article.alt}" 
+                                 loading="lazy">
+                        </a>
+                    </div>
+                    <div class="blog-details">
+                        <div class="article-categories">
+                            ${categoryTags}
+                        </div>
+                        <h3 class="blog-title font20 mb30">
+                            <a href="${article.link}" target="_blank">${article.title}</a>
+                        </h3>
+                        <p class="blog-meta font14 mt20">
+                            <a href="${article.link}" target="_blank">${article.description}</a>
+                            <br>
+                            <a href="${article.link}" target="_blank">
+                                <h4>Read more..</h4>
+                            </a>
+                        </p>
+                    </div>
+                `;
+                
+                grid.appendChild(articleElement);
+            });
+            
+            container.appendChild(grid);
+        }
+
+        // Render pagination buttons
+        function renderPagination(totalArticles) {
+            const totalPages = Math.ceil(totalArticles / articlesPerPage);
+            const paginationContainer = document.getElementById('pagination-container');
+            
+            if (totalPages <= 1) {
+                paginationContainer.innerHTML = '';
+                return;
+            }
+            
+            let paginationHTML = '';
+            
+            // Previous button
+            if (currentPage > 1) {
+                paginationHTML += `<button onclick="changePage(${currentPage - 1})" aria-label="Previous page"><i class="fas fa-chevron-left"></i></button>`;
+            }
+            
+            // Page numbers
+            const maxVisiblePages = 5;
+            let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
+            let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+            
+            // Adjust start page if we're near the end
+            if (endPage - startPage + 1 < maxVisiblePages) {
+                startPage = Math.max(1, endPage - maxVisiblePages + 1);
+            }
+            
+            for (let i = startPage; i <= endPage; i++) {
+                if (i === currentPage) {
+                    paginationHTML += `<button class="active" onclick="changePage(${i})" aria-label="Page ${i}, current page">${i}</button>`;
+                } else {
+                    paginationHTML += `<button onclick="changePage(${i})" aria-label="Go to page ${i}">${i}</button>`;
+                }
+            }
+            
+            // Next button
+            if (currentPage < totalPages) {
+                paginationHTML += `<button onclick="changePage(${currentPage + 1})" aria-label="Next page"><i class="fas fa-chevron-right"></i></button>`;
+            }
+            
+            paginationContainer.innerHTML = paginationHTML;
+        }
+
+        // Change page
+        function changePage(page) {
+            currentPage = page;
+            renderArticles();
+            // Scroll to top of articles section
+            document.getElementById('articles-container').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            // Filter tags
+            document.querySelectorAll('.filter-tag').forEach(tag => {
+                tag.addEventListener('click', function() {
+                    document.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    currentFilter = this.getAttribute('data-filter');
+                    currentPage = 1;
+                    renderArticles();
+                });
+            });
+            
+            // Search input
+            const searchInput = document.getElementById('search-input');
+            const searchButton = document.getElementById('search-button');
+            
+            searchButton.addEventListener('click', performSearch);
+            searchInput.addEventListener('keyup', function(event) {
+                if (event.key === 'Enter') {
+                    performSearch();
+                }
+            });
+            
+            // Debounced search
+            let searchTimeout;
+            searchInput.addEventListener('input', function() {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(performSearch, 500);
+            });
+        }
+
+        // Perform search
+        function performSearch() {
+            currentSearch = document.getElementById('search-input').value.trim();
+            currentPage = 1;
+            renderArticles();
+        }
+    </script>
 </body>
 
 </html>

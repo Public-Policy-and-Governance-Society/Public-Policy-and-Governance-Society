@@ -8,34 +8,19 @@
     <title>Public Policy and Governance Society | IIT Kharagpur</title>
     <meta name="description" content="CSC, Civil Services Club, UPSC, IAS, IPS, IRS, CSE, MPPLG, MPP, CLAT,  Master in Public Policy, Gate, Public Policy Law and Governance, Public Policy Internship, Public Policy School, Best think Tank, Think tank, ABVP, NSUI, Think India"/>
     <meta name="author" content="Public Policy and Governance Society, Public, Policy, governance, CSC, Civil Services Club, UPSC, IAS, IPS, IRS, CSE, MPPLG, MPP, CLAT,  Master in Public Policy, Gate, Public Policy Law and Governance, Public Policy Internship, Public Policy School, Best think Tank, Think tank, ABVP, NSUI, Think India" />
-    <meta name="keywords"
-        content="PPGS, PPG, IIT, IITKgp, Society, Cell, IIT Kharagpur, Indian Institute of technology Kharagpur, CSC, Civil Services Club, UPSC, IAS, IPS, IRS, CSE, MPPLG, MPP, CLAT,  Master in Public Policy, Gate, Public Policy Law and Governance, Public Policy Internship, Public Policy School, Best think Tank, Think tank, ABVP, NSUI, Think India"/>
-    <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0" />
-    <meta http-equiv="cache-control" content="max-age=0" />
-    <meta http-equiv="expires" content="0" />
-    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
-    <meta http-equiv="pragma" content="no-cache" />
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-
-    <!-- mobile specific metas
-		================================================== -->
+    <meta name="keywords" content="PPGS, PPG, IIT, IITKgp, Society, Cell, IIT Kharagpur, Indian Institute of technology Kharagpur, CSC, Civil Services Club, UPSC, IAS, IPS, IRS, CSE, MPPLG, MPP, CLAT,  Master in Public Policy, Gate, Public Policy Law and Governance, Public Policy Internship, Public Policy School, Best think Tank, Think tank, ABVP, NSUI, Think India"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-    <!-- CSS
-		================================================== -->
     <link rel="stylesheet" href="Home page/css/base.min.css" />
     <link rel="stylesheet" href="Home page/css/vendor.min.css" />
     <link rel="stylesheet" href="Home page/css/main.css?ver=1.1" />
-    <link rel="stylesheet" href="Home page/css/font-awesome/css/all.css" />
-    <!-- favicons
-		================================================== -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
+    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="logo.webp" type="image/x-icon" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- <link rel="manifest" href="Home page//manifest.json" /> -->
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SMHKKZ7LRL"></script>
@@ -45,18 +30,12 @@
         gtag('js', new Date());
         gtag('config', 'G-SMHKKZ7LRL');
     </script>
+
     <style>
-        #contentDropdown:hover{
-           cursor: pointer;
-        }
-        .content-item {
-          display: none;
-      }
-      
-      .content-item.active {
-          display: block;
-      }
-      </style>
+        #contentDropdown:hover { cursor: pointer; }
+        .content-item { display: none; }
+        .content-item.active { display: block; }
+    </style>
 
 </head>
 
@@ -2283,14 +2262,16 @@
 
     <!-- Java Script
                  ================================================== -->
-    <script src="Home page/js/jquery-2.1.3.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
-
-    <script src="Home page/js/plugins.js"></script>
-    <script src="Home page/js/main.js?ver=1.2"></script>
-    <!-- script
-		================================================== -->
     <script src="Home page/js/modernizr.js"></script>
+
+    <!-- Non-blocking JS -->
+    <!-- JS: Use defer/async since they are non blocking scripts -->
+    <script src="Home page/js/jquery-2.1.3.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js" defer></script>
+    <script src="Home page/js/plugins.js" defer></script>
+    <script src="Home page/js/main.js?ver=1.2" defer></script>
+
+    <!-- Don't use defer for pace.js -->
     <script src="Home page/js/pace.min.js"></script>
 </body>
 

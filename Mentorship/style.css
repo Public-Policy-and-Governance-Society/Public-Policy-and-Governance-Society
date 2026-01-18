@@ -635,7 +635,7 @@ body {
 
 .team .name {
     text-align: center;
-    height: 150px;
+    height: 100px;
 }
 
 .name p {
@@ -657,7 +657,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 10px;
+        padding: 60px;
     }
     .contact-us>div:nth-child(2) {
         width: 100%;
@@ -670,7 +670,7 @@ body {
     }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:100px) {
     .follow-us>h4>a>img {
         width: 40px;
     }
