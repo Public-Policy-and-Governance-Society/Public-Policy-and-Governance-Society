@@ -30,7 +30,7 @@
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
 /* @import url("fonts.css"); */
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@800&family=Oxanium:wght@800&display=swap");
+@import url("font-awesome/google.css");
 /* ===================================================================
  *  02. base style overrides - (_document-setup)
  *
@@ -1727,7 +1727,7 @@ header .header-logo a {
   width: 100%;
   height: 100%;
   background-color: #151515;
-  background-image: url(../images/sansad1.webp);
+  background-image: url(../images/sansad3.webp);
   background-repeat: no-repeat;
   background-position: center 30%;
   -webkit-background-size: cover;
