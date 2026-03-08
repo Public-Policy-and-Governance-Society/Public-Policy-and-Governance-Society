@@ -3153,6 +3153,46 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   }
 }
 
+.previous-batches{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+  margin-top:40px;
+  padding:0 40px;
+}
+
+.batch-card{
+  background:rgba(255,255,255,0.05);
+  border-radius:12px;
+  padding:25px;
+  text-align:center;
+  backdrop-filter:blur(8px);
+  transition:0.3s;
+}
+
+.batch-card:hover{
+  transform:translateY(-6px);
+  background:rgba(255,255,255,0.08);
+}
+
+.batch-card h3{
+  font-size: 19px;
+  color:#fff;
+  margin-bottom:12px;
+}
+
+.batch-card ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.batch-card li{
+  color:#ccc;
+  font-size:16px;
+  margin:5px 0;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * contact 
