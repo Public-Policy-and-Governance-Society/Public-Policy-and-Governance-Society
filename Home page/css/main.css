@@ -2156,7 +2156,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   min-height: 800px;
   position: relative;
   padding: 15rem 0 15rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 #services .overlay {
@@ -2194,7 +2194,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 }
 
 #services .section-intro h3 {
-  color: rgba(242, 242, 242, 0.5);
+  color: rgba(242, 242, 242, 0.75);
 }
 
 #services .section-intro h1 {
@@ -2203,7 +2203,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 
 #services .section-intro .lead {
   text-align: justify;
-  color: rgba(242, 242, 242, 0.4);
+  color: rgba(242, 242, 242, 0.9);
 }
 
 #services .services-content {
@@ -2222,7 +2222,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 }
 
 #services .services-list .service-item p {
-  color: rgba(242, 242, 242, 0.5);
+  color: rgba(242, 242, 242, 0.9);
 }
 
 #services .services-list .icon {
