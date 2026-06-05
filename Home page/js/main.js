@@ -418,8 +418,9 @@
         ssSmoothScroll();
         ssPlaceholder();
         ssAlertBoxes();
-        ssAnimations();
-        ssIntroAnimation();
+        // Scroll-reveal / intro fade animations removed - content shows immediately.
+        // ssAnimations();
+        // ssIntroAnimation();
         ssContactForm();
         ssAjaxChimp();
         ssBackToTop();
