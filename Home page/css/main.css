@@ -2156,7 +2156,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   min-height: 800px;
   position: relative;
   padding: 15rem 0 15rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 #services .overlay {
@@ -2193,8 +2193,17 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#00000000', GradientType=0);
 }
 
+/* Lift the text content above the dark .overlay / .gradient-overlay so the
+   headings and descriptions are fully visible instead of being covered by
+   the 70% black overlay. */
+#services .section-intro,
+#services .services-content {
+  position: relative;
+  z-index: 2;
+}
+
 #services .section-intro h3 {
-  color: rgba(242, 242, 242, 0.5);
+  color: rgba(242, 242, 242, 0.75);
 }
 
 #services .section-intro h1 {
@@ -2203,7 +2212,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 
 #services .section-intro .lead {
   text-align: justify;
-  color: rgba(242, 242, 242, 0.4);
+  color: #ffffff;
 }
 
 #services .services-content {
@@ -2222,7 +2231,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 }
 
 #services .services-list .service-item p {
-  color: rgba(242, 242, 242, 0.5);
+  color: #ffffff;
 }
 
 #services .services-list .icon {
