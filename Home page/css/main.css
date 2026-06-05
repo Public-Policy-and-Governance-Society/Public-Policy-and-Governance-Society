@@ -1395,6 +1395,29 @@ input::-moz-focus-inner {
   opacity: 0;
 }
 
+/* Performance: reveal content via pure CSS so it is never stuck invisible
+   waiting on the deferred jQuery/plugins/main.js bundle or window.load.
+   When the JS scroll-animations run they add ".animated", so the
+   :not(.animated) selectors below stop matching and the original
+   fade-in effects still play in the normal (fast-JS) case. */
+@keyframes ppgsReveal {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Hero / above-the-fold content reveals almost immediately. */
+.js .animate-intro:not(.animated) {
+  animation: ppgsReveal 0.5s ease forwards;
+  animation-delay: 0.2s;
+}
+
+/* Below-the-fold blocks: JS reveals them on scroll; this is a safety net
+   so nothing stays hidden if the heavy scripts are slow or fail to load. */
+.js .animate-this:not(.animated) {
+  animation: ppgsReveal 0.5s ease forwards;
+  animation-delay: 2.5s;
+}
+
 .oldie .animate-this,
 .oldie .animate-intro .no-cssanimations .animate-this,
 .no-cssanimations .animate-intro {

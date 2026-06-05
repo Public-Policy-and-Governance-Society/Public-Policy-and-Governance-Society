@@ -32,7 +32,10 @@
     <link rel="preload" as="image" href="Home page/images/sansad3.webp" fetchpriority="high" />
 
     <link rel="stylesheet" href="Home page/css/base.min.css" />
-    <link rel="stylesheet" href="Home page/css/vendor.min.css" />
+    <!-- vendor.min.css is plugin/animation CSS only (carousels, lightbox, animate.css) -
+         not needed for first paint, so load it async to keep it off the critical path -->
+    <link rel="stylesheet" href="Home page/css/vendor.min.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="Home page/css/vendor.min.css" /></noscript>
     <link rel="stylesheet" href="Home page/css/main.css?ver=1.1" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'" />
@@ -193,7 +196,7 @@
                 <div class="row">
                     <div class="col-twelve">
                         <h3 class="animate-intro">Empower. Inspire. Transform.</h3>
-                        <h1 class="animate-intro fadeInUp animated" style="color: rgb(255, 255, 255);">
+                        <h1 class="animate-intro" style="color: rgb(255, 255, 255);">
                             Public Policy and Governance Society
                             <br />
                             IIT Kharagpur
