@@ -2193,6 +2193,15 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#00000000', GradientType=0);
 }
 
+/* Lift the text content above the dark .overlay / .gradient-overlay so the
+   headings and descriptions are fully visible instead of being covered by
+   the 70% black overlay. */
+#services .section-intro,
+#services .services-content {
+  position: relative;
+  z-index: 2;
+}
+
 #services .section-intro h3 {
   color: rgba(242, 242, 242, 0.75);
 }
