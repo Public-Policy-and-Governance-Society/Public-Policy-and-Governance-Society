@@ -1390,9 +1390,12 @@ input::-moz-focus-inner {
   max-width: 800px;
 }
 
+/* Scroll-reveal / intro fade animations removed - content shows immediately
+   and never depends on the deferred JS bundle to become visible. */
 .js .animate-this,
 .js .animate-intro {
-  opacity: 0;
+  opacity: 1;
+  animation: none;
 }
 
 .oldie .animate-this,
@@ -2144,7 +2147,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 
 #services {
   background-color: #19191b;
-  background-image: url(../images/services-bg.jpg);
+  background-image: url(../images/services-bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -2865,7 +2868,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 
 #contact {
   background-color: #111111;
-  background-image: url(../images/contact-bg.jpg);
+  background-image: url(../images/contact-bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
