@@ -3170,7 +3170,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 
 .previous-batches{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  grid-template-columns:repeat(3, 1fr);
   gap:30px;
   margin-top:40px;
   padding:0 40px;
