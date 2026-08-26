@@ -3207,7 +3207,17 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   font-size:16px;
   margin:5px 0;
 }
+@media only screen and (max-width: 768px) {
+    .previous-batches {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
+@media only screen and (max-width: 480px) {
+    .previous-batches {
+        grid-template-columns: 1fr;
+    }
+}
 /* ------------------------------------------------------------------- 
  * responsive:
  * contact 
